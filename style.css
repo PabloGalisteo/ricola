@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5em 3em;
+  background-image: url('/images/mainbg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500em;
+}
+
+.logo {
+  width: 8em;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
