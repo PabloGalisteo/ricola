@@ -5,10 +5,11 @@
 }
 
 :root {
-  --yellow: #FFCC00;
+  --yellow: #ffcc00;
   --green: #005245;
-  --font-titel: "Frutiger Next", serif;
-  --font-text: "ff-meta-serif-web-pro", serif;
+  --font-titel: 'Frutiger Next', serif;
+  --font-text: 'ff-meta-serif-web-pro', serif;
+  --white: #ffffff;
 }
 
 body {
@@ -39,10 +40,24 @@ header {
   color: var(--green);
 }
 
-.test {
-font-family: var(--font-titel);
-font-weight: 500;
-font-style: normal;
+.h1 {
+  font-family: var(--font-titel);
+  color: var(--white);
+  font-weight: 500;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 4rem;
+  margin-left: 2.4em;
+  margin-top: 2.4em;
+  line-height: 1.27em;
+}
+
+.main-button {
+  margin-left: 11em;
+  margin-top: 2.4em;
+  border: none;
+  border-radius: 2.5em;
+  padding: 2.5em;
 }
 
 .mountains-container {
