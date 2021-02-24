@@ -49,15 +49,38 @@ header {
   font-size: 4rem;
   margin-left: 2.4em;
   margin-top: 2.4em;
-  line-height: 1.27em;
+  line-height: 1.22em;
 }
 
 .main-button {
   margin-left: 11em;
-  margin-top: 2.4em;
-  border: none;
-  border-radius: 2.5em;
-  padding: 2.5em;
+  margin-top: 1.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.25em solid var(--green);
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 40em;
+  padding: 0.6em 2em 0.6em 2em;
+  font-family: var(--font-titel);
+  font-size: 0.875rem;
+}
+
+.chevron {
+  background-color: transparent;
+  border-right: 0.22em solid var(--green);
+  border-top: 0.22em solid var(--green);
+  transform: translateX(-25%) rotate(45deg);
+  height: 1.3em;
+  width: 1.3em;
+  margin-left: 1.3em;
+  border-top-left-radius: 0.15em;
+  border-bottom-right-radius: 0.15em;
+  border-bottom-left-radius: 0.15em;
+  border-top-right-radius: 0.15em;
+  border-start-start-radius: 0.15em;
 }
 
 .mountains-container {
