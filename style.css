@@ -8,6 +8,7 @@
   --yellow: #ffcc00;
   --green: #005245;
   --font-titel: 'Frutiger Next', serif;
+  --font-titel-bold: 'FrutigerNextPro-Bold', serif;
   --font-text: 'ff-meta-serif-web-pro', serif;
   --white: #ffffff;
 }
@@ -21,8 +22,10 @@ body {
 
 header {
   background-color: var(--yellow);
-  display: inline-block;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .header-container {
@@ -41,10 +44,8 @@ header {
 }
 
 .h1 {
-  font-family: var(--font-titel);
+  font-family: var(--font-titel-bold);
   color: var(--white);
-  font-weight: 500;
-  font-weight: bold;
   font-style: normal;
   font-size: 4rem;
   margin-left: 2.4em;
@@ -66,6 +67,14 @@ header {
   padding: 0.6em 2em 0.6em 2em;
   font-family: var(--font-titel);
   font-size: 0.875rem;
+}
+
+.button-text {
+  color: var(--green);
+}
+
+button:focus {
+  outline: none;
 }
 
 .chevron {
