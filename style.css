@@ -17,7 +17,7 @@ body {
   background-image: url('/images/mainbg.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 500em;
+  /* height: 231em; */
 }
 
 header {
@@ -47,15 +47,15 @@ header {
   font-family: var(--font-titel-bold);
   color: var(--white);
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3.8rem;
   margin-left: 2.4em;
-  margin-top: 2.4em;
+  margin-top: 3.7em;
   line-height: 1.22em;
 }
 
 .main-button {
   margin-left: 11em;
-  margin-top: 1.7em;
+  margin-top: 1.6em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,13 +64,14 @@ header {
   background-color: transparent;
   text-decoration: none;
   border-radius: 40em;
-  padding: 0.6em 2em 0.6em 2em;
+  padding: 0.5em 1.9em 0.5em 1.9em;
   font-family: var(--font-titel);
   font-size: 0.875rem;
 }
 
 .button-text {
   color: var(--green);
+  line-height: 1.3em;
 }
 
 button:focus {
@@ -84,7 +85,7 @@ button:focus {
   transform: translateX(-25%) rotate(45deg);
   height: 1.3em;
   width: 1.3em;
-  margin-left: 1.3em;
+  margin-left: 1.33em;
   border-top-left-radius: 0.15em;
   border-bottom-right-radius: 0.15em;
   border-bottom-left-radius: 0.15em;
@@ -109,9 +110,34 @@ button:focus {
 }
 
 .popup {
-  height: 128.5em;
+  height: 201em;
 }
 
-.main {
-  margin-top: 500em;
+
+/*------------------------------------FOOTER---------------------------------------*/
+
+.container-footer {
+  background-color: var(--white);
+  opacity: 70%;
+  text-align: center;
+  padding: 3em;
+}
+
+li {
+  display: inline-block;
+}
+
+.text-one-footer {
+  padding-bottom: 1.2em;
+}
+
+hr {
+width: 5em;
+margin: auto;
+height: 0.1em;
+border-color: var(--green);
+}
+
+.text-two-footer {
+  padding-top: 1.2em;
 }
