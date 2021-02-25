@@ -20,6 +20,10 @@ body {
   /* height: 231em; */
 }
 
+main {
+  height: 243em;
+}
+
 header {
   background-color: var(--yellow);
   width: 100%;
@@ -113,7 +117,6 @@ button:focus {
   height: 201em;
 }
 
-
 /*------------------------------------FOOTER---------------------------------------*/
 
 .container-footer {
@@ -121,10 +124,22 @@ button:focus {
   opacity: 70%;
   text-align: center;
   padding: 3em;
+  margin: auto;
+}
+
+.text-one-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.text-two-footer {
+  display: flex;
+  justify-content: center;
 }
 
 li {
   display: inline-block;
+  padding: 0em 1em 0em 1em;
 }
 
 .text-one-footer {
@@ -132,12 +147,37 @@ li {
 }
 
 hr {
-width: 5em;
-margin: auto;
-height: 0.1em;
-border-color: var(--green);
+  width: 5em;
+  margin: auto;
+  height: 0.1em;
+  border-color: var(--green);
 }
 
 .text-two-footer {
   padding-top: 1.2em;
+}
+
+.cart-button {
+  border: 0.05em solid var(--green);
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 0.25em;
+  padding: 0.5em 1.9em 0.5em 1.9em;
+  font-family: var(--font-titel);
+  font-size: 0.875rem;
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cart {
+  margin-right: 1em;
 }
