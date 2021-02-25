@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  height: 243em;
+  height: 209.1em;
 }
 
 header {
@@ -125,6 +125,9 @@ button:focus {
   text-align: center;
   padding: 3em;
   margin: auto;
+  font-family: var(--font-titel);
+  color: var(--green);
+  font-size: 0.75em;
 }
 
 .text-one-footer {
@@ -150,7 +153,8 @@ hr {
   width: 5em;
   margin: auto;
   height: 0.1em;
-  border-color: var(--green);
+  background-color: var(--green);
+  border: none;
 }
 
 .text-two-footer {
@@ -166,11 +170,12 @@ hr {
   padding: 0.5em 1.9em 0.5em 1.9em;
   font-family: var(--font-titel);
   font-size: 0.875rem;
-  margin-top: 1.5em;
+  margin-top: 1.6em;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--green);
+  margin-bottom: 1.7em;
 }
 
 .flex-button {
@@ -180,4 +185,21 @@ hr {
 
 .cart {
   margin-right: 1em;
+}
+
+.follow-ricola-text {
+  font-family: var(--font-titel-bold);
+  margin-bottom: 1.65em;
+  font-size: 0.73rem;
+
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  height: 2em;
+  padding: 0em 1.5em 0em 1.5em;
 }
