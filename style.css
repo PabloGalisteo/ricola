@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  height: 209.1em;
+  height: 259.1em;
 }
 
 header {
@@ -130,6 +130,10 @@ button:focus {
   font-size: 0.75em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text-one-footer {
   display: flex;
   justify-content: center;
@@ -191,7 +195,6 @@ hr {
   font-family: var(--font-titel-bold);
   margin-bottom: 1.65em;
   font-size: 0.73rem;
-
 }
 
 .icons {
