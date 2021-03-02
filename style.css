@@ -108,24 +108,26 @@ button:focus {
 .section1 {
   margin-top: -4em;
   position: relative;
+  display: block;
 }
 
 .caramel {
   position: absolute;
-  margin-top: -93.7em;
-  margin-left: 52em;
+  margin-top: -106.5%;
+  margin-left: 57.5%;
 }
 
 .airplane {
   position: absolute;
-  margin-top: -72em;
-  margin-left: 10em;
+  margin-top: -81%;
+  margin-left: 12%;
 }
 
 .climber {
   position: absolute;
-  margin-top: -42em;
-  margin-left: 64em;
+  margin-top: -48%;
+  margin-left: 71%;
+  width: 11%;
 }
 
 .section2 {
