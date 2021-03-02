@@ -18,7 +18,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .header-container {
@@ -43,7 +43,12 @@ main {
 }
 
 .container-section1 {
-  background: linear-gradient(180deg, #4674B1 0%, #5BC0F0 33.45%, #FFFFFF 90.45%);
+  background: linear-gradient(
+    180deg,
+    #4674b1 0%,
+    #5bc0f0 33.45%,
+    #ffffff 90.45%
+  );
 }
 
 bg-images {
@@ -102,18 +107,40 @@ button:focus {
 
 .section1 {
   margin-top: -4em;
+  position: relative;
+}
+
+.caramel {
+  position: absolute;
+  margin-top: -93.7em;
+  margin-left: 52em;
+}
+
+.airplane {
+  position: absolute;
+  margin-top: -72em;
+  margin-left: 10em;
+}
+
+.climber {
+  position: absolute;
+  margin-top: -42em;
+  margin-left: 64em;
 }
 
 .section2 {
   margin-top: -47em;
+  position: relative;
 }
 
 .section3 {
-  margin-top: -82em;
+  margin-top: -94em;
+  position: relative;
 }
 
 .section4 {
   margin-top: -49em;
+  position: relative;
 }
 
 /*------------------------------------FOOTER---------------------------------------*/
