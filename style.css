@@ -13,17 +13,6 @@
   --white: #ffffff;
 }
 
-body {
-  background-image: url('/images/mainbg.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* height: 231em; */
-}
-
-main {
-  height: 259.1em;
-}
-
 header {
   background-color: var(--yellow);
   width: 100%;
@@ -47,13 +36,27 @@ header {
   color: var(--green);
 }
 
-.h1 {
+/*------------------------------------MAIN---------------------------------------*/
+
+main {
+  margin-top: 4em;
+}
+
+.container-section1 {
+  background: linear-gradient(180deg, #4674B1 0%, #5BC0F0 33.45%, #FFFFFF 90.45%);
+}
+
+bg-images {
+  width: 100%;
+}
+
+.titeltext {
   font-family: var(--font-titel-bold);
   color: var(--white);
   font-style: normal;
   font-size: 3.8rem;
   margin-left: 2.4em;
-  margin-top: 3.7em;
+  padding-top: 2em;
   line-height: 1.22em;
 }
 
@@ -97,24 +100,20 @@ button:focus {
   border-start-start-radius: 0.15em;
 }
 
-.mountains-container {
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 33% 72%;
-  grid-template-rows: 50% 50%;
+.section1 {
+  margin-top: -4em;
 }
 
-.mountain-left {
-  width: 50em;
+.section2 {
+  margin-top: -47em;
 }
 
-.mountain-right {
-  width: 60em;
-  margin-top: 18em;
+.section3 {
+  margin-top: -82em;
 }
 
-.popup {
-  height: 201em;
+.section4 {
+  margin-top: -49em;
 }
 
 /*------------------------------------FOOTER---------------------------------------*/
@@ -128,6 +127,7 @@ button:focus {
   font-family: var(--font-titel);
   color: var(--green);
   font-size: 0.75em;
+  margin-top: -23em;
 }
 
 a {
