@@ -113,14 +113,16 @@ button:focus {
 
 .caramel {
   position: absolute;
-  margin-top: -106.5%;
-  margin-left: 57.5%;
+  margin-top: -102.4%;
+  margin-left: 58.5%;
+  width: 12%;
 }
 
 .airplane {
   position: absolute;
   margin-top: -81%;
   margin-left: 12%;
+  width: 11%;
 }
 
 .climber {
@@ -130,8 +132,21 @@ button:focus {
   width: 11%;
 }
 
+.popup {
+  margin: 4em;
+  margin-top: -80%;
+  display: none;
+}
+
+.footsteps-img {
+  object-fit: cover;
+  width: 100%;
+  height: 80vh;
+  object-position: center; 
+}
+
 .section2 {
-  margin-top: -47em;
+  margin-top: 0em;
   position: relative;
 }
 
