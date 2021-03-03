@@ -137,15 +137,22 @@ button:focus {
 
 .popup {
   margin: 4em;
-  margin-top: -80%;
-  display: none;
+  /* display: inline-block; */
+  position: relative;
 }
 
 .footsteps-img {
   object-fit: cover;
+  position: absolute;
   width: 100%;
-  height: 80vh;
-  object-position: center; 
+  height: 550px;
+  margin-top: -70em;
+  object-position: center;
+  z-index: 1000;
+}
+
+.pop-up-info {
+  position: absolute;
 }
 
 .section2 {
@@ -161,6 +168,18 @@ button:focus {
 .section4 {
   margin-top: -49em;
   position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-times {
+  z-index: 1000;
+  position: absolute;
+  margin-top: -13.5em;
+  margin-left: 0.5em;
+  color: var(--white);
 }
 
 /*------------------------------------FOOTER---------------------------------------*/
