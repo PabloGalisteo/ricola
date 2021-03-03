@@ -1,6 +1,8 @@
-const climberBtn = document.querySelector(".climber-btn");
+const climberBtn = document.querySelector(".climber-btn")
+
+climberBtn.addEventListener("click", () => {
+    alert('Hej!')
+});
 
 
-function setupEventListeners {
-    document.getElementById("climber-btn").addEventListener("click", alert("Hejsan");
-}  
+

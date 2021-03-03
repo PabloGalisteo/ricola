@@ -125,11 +125,14 @@ button:focus {
   width: 11%;
 }
 
-.climber {
+.climber-btn {
   position: absolute;
   margin-top: -48%;
   margin-left: 71%;
-  width: 11%;
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .popup {
@@ -146,12 +149,12 @@ button:focus {
 }
 
 .section2 {
-  margin-top: 0em;
+  margin-top: -26em;
   position: relative;
 }
 
 .section3 {
-  margin-top: -94em;
+  margin-top: 0em;
   position: relative;
 }
 
