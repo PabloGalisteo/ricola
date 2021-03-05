@@ -187,7 +187,8 @@ button:focus {
 }
 
 .popup-menu-list {
-  padding: 0em 0.5em 1em 0em;
+  padding: 0em 0.5em 0.1em 0em;
+  cursor: pointer;
 }
 
 .popup-menu {
@@ -199,6 +200,7 @@ button:focus {
   font-family: var(--font-titel);
   padding-bottom: 0.7em;
   font-size: 1.8rem;
+  margin-top: 1em;
 }
 
 .popup-h2 {
@@ -217,6 +219,12 @@ button:focus {
   left: 4em;
   top: 5.9em;
   position: absolute;
+}
+
+.link-intro,
+.link-schutz,
+.link-morad {
+  border-bottom: 2px solid #ffffff;
 }
 
 /*------------------------------------SECTION 2---------------------------------------*/
