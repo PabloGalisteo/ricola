@@ -167,7 +167,7 @@ button:focus {
   overflow: hidden;
 }
 
-.footsteps-img {
+.popup-img {
   width: 100%;
 }
 
@@ -175,9 +175,10 @@ button:focus {
   position: absolute;
   color: var(--white);
   width: 42%;
-  top: 15%;
+  height: 75vh;
+  /* top: 15%; */
   margin-right: -37em;
-  bottom: 15%;
+  /* bottom: 15%; */
   padding: 3em;
   background-color: rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(10px);
@@ -194,6 +195,10 @@ button:focus {
 .popup-menu {
   font-family: var(--font-titel);
   font-size: 1.5rem;
+}
+
+.popup-text {
+  overflow: scroll;
 }
 
 .popup-h1 {
