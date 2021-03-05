@@ -177,9 +177,9 @@ button:focus {
   width: 42%;
   height: 75vh;
   /* top: 15%; */
-  margin-right: -37em;
+  margin-right: -42em;
   /* bottom: 15%; */
-  padding: 3em;
+  padding: 3em 2em 3em 3.5em;
   background-color: rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -198,14 +198,15 @@ button:focus {
 }
 
 .popup-text {
-  overflow: scroll;
+  overflow: auto;
+  scrollbar-color: var(--white) transparent;
+  padding-right: 2em;
 }
 
 .popup-h1 {
   font-family: var(--font-titel);
   padding-bottom: 0.7em;
   font-size: 1.8rem;
-  margin-top: 1em;
 }
 
 .popup-h2 {
@@ -222,14 +223,24 @@ button:focus {
 
 .exit-btn {
   left: 4em;
-  top: 5.9em;
+  top: 5em;
   position: absolute;
 }
 
-.link-intro,
-.link-schutz,
-.link-morad {
+/* underline only in intro now */
+.link-intro {
   border-bottom: 2px solid #ffffff;
+  margin-bottom: 1.5em;
+}
+
+/* .link-nature {
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 1.5em;
+  display: none;
+} */
+
+.popup-paragraph {
+  margin-bottom: 2em;
 }
 
 /*------------------------------------SECTION 2---------------------------------------*/
