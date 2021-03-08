@@ -187,15 +187,44 @@ button:focus {
   flex-direction: column;
 }
 
-.popup-menu-list {
-  padding: 0em 0.5em 0.1em 0em;
-  cursor: pointer;
-}
-
 .popup-menu {
   font-family: var(--font-titel);
   font-size: 1.5rem;
 }
+
+.popup-menu-list {
+  cursor: pointer;
+  float: left;
+  display: block;
+  margin-bottom: 1.2em;
+}
+
+.popup-menu-list:hover {
+  border-bottom: 3px solid var(--white);
+}
+
+.popup-menu-list.active {
+  border-bottom: 3px solid var(--white);
+  opacity: 0;
+}
+
+.padding {
+  padding: 0em 0.6em 0.1em 0em;
+}
+
+
+
+/* underline only in intro now
+.link-intro {
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 1.5em;
+} */
+
+/* .link-nature {
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 1.5em;
+  display: none;
+} */
 
 .popup-text {
   overflow: auto;
@@ -219,6 +248,7 @@ button:focus {
   font-family: var(--font-titel);
   letter-spacing: 0.01em;
   line-height: 1.3em;
+  margin-bottom: 2em;
 }
 
 .exit-btn {
@@ -226,32 +256,42 @@ button:focus {
   top: 5em;
   position: absolute;
 }
-
-/* underline only in intro now */
-.link-intro {
-  border-bottom: 2px solid #ffffff;
-  margin-bottom: 1.5em;
-}
-
-/* .link-nature {
-  border-bottom: 2px solid #ffffff;
-  margin-bottom: 1.5em;
-  display: none;
-} */
-
-.popup-paragraph {
-  margin-bottom: 2em;
-}
-
 /*------------------------------------SECTION 2---------------------------------------*/
 
 .section2 {
   margin-top: -26em;
   position: relative;
+  width: 100%;
 }
 
+
+.farm-btn {
+  position: absolute;
+  margin-top: -91%;
+  margin-left: 56%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.herbs-btn {
+  position: absolute;
+  margin-top: -70%;
+  margin-left: 35%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.herbs-img {
+  width: 80%;
+}
+
+/*------------------------------------SECTION 3---------------------------------------*/
+
+
 .section3 {
-  margin-top: 0em;
+  margin-top: -48em;
   position: relative;
 }
 
