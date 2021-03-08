@@ -13,6 +13,12 @@ const popupText = document.querySelector(".popup-text")
 const changeImg = document.querySelector(".popup-img")
 const linkIntro = document.querySelector(".link-intro")
 const linkNature = document.querySelector(".link-nature")
+// section 2
+const farmBtn = document.querySelector(".farm-btn")
+const popUpFarm = document.querySelector(".popup-farm")
+
+
+
 
 
 climberBtn.addEventListener("click", () => {
@@ -36,7 +42,7 @@ intro.addEventListener("click", () => {
                                 "<p class='popup-paragraph'>"+'At Ricola we believe in the actions we take in the here and now. We believe that every step towards a more sustainable way of operating and developing our global business matters. The belief is grounded in Lean methodology, tangibility, behavioural and mathematical science. <br><br>If we take relevant and constant sustainable footsteps, over time, the accumulated effect will benefit us and the world in ways we could not imagine. <br><br>We refer to measures and projects as: “Footsteps”.'+"</p>";
 })
 
-nature.addEventListener("click", () => {
+farmBtn.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_nature_croped.jpg";
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
                             "<h2 class='popup-h2'>"+'INTENTION'+"</h2>"+
@@ -47,3 +53,14 @@ nature.addEventListener("click", () => {
 
  // linkNature.style.display.add("inline-block");
 // linkIntro.style.display.add("none");
+
+farmBtn.addEventListener("click", () => {
+    popUpFarm.classList.add("bg-active");
+    smallHeader.style.padding = "0.5em 3em";
+});
+
+closePopUp.addEventListener("click", () => {
+    popUpBg.classList.remove("bg-active");
+    popUpFarm.classList.remove("bg-active");
+    smallHeader.style.padding = "1.2em 3em";
+});

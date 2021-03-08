@@ -136,7 +136,8 @@ button:focus {
   cursor: pointer;
 }
 
-.popup-bg {
+.popup-bg,
+.popup-farm {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -212,8 +213,6 @@ button:focus {
   padding: 0em 0.6em 0.1em 0em;
 }
 
-
-
 /* underline only in intro now
 .link-intro {
   border-bottom: 2px solid #ffffff;
@@ -259,11 +258,10 @@ button:focus {
 /*------------------------------------SECTION 2---------------------------------------*/
 
 .section2 {
-  margin-top: -26em;
+  margin-top: -29em;
   position: relative;
   width: 100%;
 }
-
 
 .farm-btn {
   position: absolute;
@@ -281,6 +279,7 @@ button:focus {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .herbs-img {
@@ -288,7 +287,6 @@ button:focus {
 }
 
 /*------------------------------------SECTION 3---------------------------------------*/
-
 
 .section3 {
   margin-top: -48em;
@@ -303,6 +301,35 @@ button:focus {
 .fa-times {
   position: absolute;
   color: var(--white);
+  cursor: pointer;
+}
+
+/*------------------------------------SECTION 4---------------------------------------*/
+.people-btn {
+  position: absolute;
+  margin-top: -92%;
+  margin-left: 6%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 38%;
+}
+
+.factory-btn {
+  position: absolute;
+  margin-top: -75%;
+  margin-left: 52%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.truck-btn {
+  position: absolute;
+  margin-top: -51%;
+  margin-left: 32%;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
