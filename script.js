@@ -12,13 +12,15 @@ const transparency = document.querySelector(".link-transparency")
 const popupText = document.querySelector(".popup-text")
 const changeImg = document.querySelector(".popup-img")
 const linkIntro = document.querySelector(".link-intro")
-const linkNature = document.querySelector(".link-nature")
+
 // section 2
 const farmBtn = document.querySelector(".farm-btn")
 const popUpFarm = document.querySelector(".popup-farm")
 
 
+// ------------------------------------SECTION 1
 
+// Footsteps slides
 
 
 climberBtn.addEventListener("click", () => {
@@ -27,11 +29,10 @@ climberBtn.addEventListener("click", () => {
 });
 
 closePopUp.addEventListener("click", () => {
+    alert("HEJSAN");
     popUpBg.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
 });
-
-// Nature slide 
 
 intro.addEventListener("click", () => {
     changeImg.src = "/images/footsteps.png";
@@ -42,7 +43,7 @@ intro.addEventListener("click", () => {
                                 "<p class='popup-paragraph'>"+'At Ricola we believe in the actions we take in the here and now. We believe that every step towards a more sustainable way of operating and developing our global business matters. The belief is grounded in Lean methodology, tangibility, behavioural and mathematical science. <br><br>If we take relevant and constant sustainable footsteps, over time, the accumulated effect will benefit us and the world in ways we could not imagine. <br><br>We refer to measures and projects as: “Footsteps”.'+"</p>";
 })
 
-farmBtn.addEventListener("click", () => {
+nature.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_nature_croped.jpg";
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
                             "<h2 class='popup-h2'>"+'INTENTION'+"</h2>"+
@@ -51,16 +52,21 @@ farmBtn.addEventListener("click", () => {
                                 "<p class='popup-paragraph'>"+'We work close with farmers in Switzerland to ensure high biodiversity standards. A majority of supplier is certified according to “BioSuisse“ standards and farmers in Switzerland that produce for us are adhering to high sustainable farming standards. This is not necessarily the case in our global supply chain. Through Close the Gap we have identified areas that need improvement and we wish to conduct this improvement based on a set of Ricola Principles.'+"</p>";
 })
 
- // linkNature.style.display.add("inline-block");
-// linkIntro.style.display.add("none");
+
+
+// ------------------------------------SECTION 2
+
+// Farm slides
+
 
 farmBtn.addEventListener("click", () => {
     popUpFarm.classList.add("bg-active");
+    popUpBg.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
 });
 
 closePopUp.addEventListener("click", () => {
-    popUpBg.classList.remove("bg-active");
     popUpFarm.classList.remove("bg-active");
+    popUpBg.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
 });
