@@ -273,6 +273,19 @@ button:focus {
   cursor: pointer;
 }
 
+.bubble-people {
+  /* overflow: none; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.bubble-woman,
+.bubble-man {
+  width: 25%;
+  margin: 0em 1em;
+}
+
 .herbs-btn {
   position: absolute;
   margin-top: -70%;
