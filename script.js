@@ -16,9 +16,9 @@ const linkIntro = document.querySelector(".link-intro")
 // section 2
 const farmBtn = document.querySelector(".farm-btn")
 const popUpFarm = document.querySelector(".popup-farm")
+const closePopUpFarm = document.getElementById("exit-farm")
 
-
-// ------------------------------------SECTION 1
+// ------------------------------------SECTION 1------------------------------------
 
 // Footsteps slides
 
@@ -29,7 +29,6 @@ climberBtn.addEventListener("click", () => {
 });
 
 closePopUp.addEventListener("click", () => {
-    alert("HEJSAN");
     popUpBg.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
 });
@@ -54,19 +53,17 @@ nature.addEventListener("click", () => {
 
 
 
-// ------------------------------------SECTION 2
+// ------------------------------------SECTION 2------------------------------------
 
 // Farm slides
 
 
 farmBtn.addEventListener("click", () => {
     popUpFarm.classList.add("bg-active");
-    popUpBg.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
 });
 
-closePopUp.addEventListener("click", () => {
+closePopUpFarm.addEventListener("click", () => {
     popUpFarm.classList.remove("bg-active");
-    popUpBg.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
 });
