@@ -18,6 +18,11 @@ const farmBtn = document.querySelector(".farm-btn")
 const popUpFarm = document.querySelector(".popup-farm")
 const closePopUpFarm = document.getElementById("exit-farm")
 
+const schutz = document.getElementById("link-schutz")
+const morard = document.querySelector(".link-morard")
+const linkIntroFarm = document.querySelector(".link-intro-farm")
+
+
 // ------------------------------------SECTION 1------------------------------------
 
 // Footsteps slides
@@ -66,4 +71,13 @@ farmBtn.addEventListener("click", () => {
 closePopUpFarm.addEventListener("click", () => {
     popUpFarm.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+});
+
+schutz.addEventListener("click", () => {
+    changeImg.src = "/images/Shutz_Background.png";
+    popupText.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
+                            "<h2 class='popup-h2'>"+'INTENTION'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
+                                "<h2 class='popup-h2'>"+'CURRENT STATE'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'We work close with farmers in Switzerland to ensure high biodiversity standards. A majority of supplier is certified according to “BioSuisse“ standards and farmers in Switzerland that produce for us are adhering to high sustainable farming standards. This is not necessarily the case in our global supply chain. Through Close the Gap we have identified areas that need improvement and we wish to conduct this improvement based on a set of Ricola Principles.'+"</p>";
 });
