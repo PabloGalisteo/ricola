@@ -21,6 +21,8 @@ const closePopUpFarm = document.getElementById("exit-farm")
 const schutz = document.getElementById("link-schutz")
 const morard = document.querySelector(".link-morard")
 const linkIntroFarm = document.querySelector(".link-intro-farm")
+const popupInfoFarm = document.querySelector(".popup-text-farm")
+const popupImgFarm = document.querySelector(".popup-img-farm")
 
 
 // ------------------------------------SECTION 1------------------------------------
@@ -74,8 +76,8 @@ closePopUpFarm.addEventListener("click", () => {
 });
 
 schutz.addEventListener("click", () => {
-    changeImg.src = "/images/Shutz_Background.png";
-    popupText.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
+    popupImgFarm.src = "/images/Shutz_Background.png";
+    popupInfoFarm.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
                             "<h2 class='popup-h2'>"+'INTENTION'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'CURRENT STATE'+"</h2>"+
