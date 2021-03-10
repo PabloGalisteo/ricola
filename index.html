@@ -39,18 +39,43 @@
                     <img class="caramel" src="/images/ricola drop.png" alt="ricola-drop">
 
 <!--------------------------- S1. AIRPLANE ----------------------------->
+                <div class="airplane-container">
+                    <button class="airplane-btn"><img class="airplane" src="/images/airplane.svg" alt="airplane"></button>
+                </div>
 
-                    <img class="airplane" src="/images/airplane.svg" alt="airplane">
-
+                <div class="popup-bg popup-airplane">
+                    <div class="popup">
+                            <img class="popup-img popup-img-airplane" src="/images/Import.png" alt="">
+                                <div class="popup-info">
+                                    <div class="popup-menu">
+                                    <ul>
+                                        <li class="popup-menu-list link-import">Import</li>
+                                        <li class="popup-menu-list link-export">Export</li>
+                                    </ul>
+                                    </div>
+                                    <div class="popup-text popup-text-airplane">
+                                        <h1 class="popup-h1">"Imported herbs"</h1>
+                                        <h2 class="popup-h2">Established Ecosystem</h2>
+                                        <p class="popup-paragraph">Here at Ricola we pride ourselves on growing 97% of all our herbs right here in the swiss alps. With the help of over 100 amazing farmers we have established an ecosystem of fresh near produced raw materials.</p>
+                                        <h2 class="popup-h2">We are not yet perfect</h2>
+                                        <p class="popup-paragraph">Although we are not perfect it would be impossible to find all the herbs we require for our healthy fresh products in Switzerland. Especially since we are a global company.<br><br>Therefore we import 3% of our herbs from the awesome, hard working farmers in India and other locations around the world.</p>
+                                    </div>
+                                </div>
+                                <span class="exit-btn">
+                                    <i id="exit-airplane" class="fas fa-times fa-2x"></i>
+                                </span>
+                    </div>
+                </div>
+                
 <!--------------------------- S1. CLIMBER ----------------------------->
 
                     <div class="climber-container">
-                        <button class="climber-btn"><img src="/images/mountain climber.svg" alt=""></button>
+                        <button class="climber-btn"><img src="/images/mountain climber.svg" alt="mountain climber"></button>
                     </div>
 
-                            <div class="popup-bg">
+                            <div class="popup-bg popup-climber">
                                 <div class="popup">
-                                        <img class="popup-img" src="/images/footsteps.png" alt="">
+                                        <img class="popup-img popup-img-climber" src="/images/footsteps.png" alt="">
                                             <div class="popup-info">
                                                 <div class="popup-menu">
                                                 <ul>
@@ -61,7 +86,7 @@
                                                     <li class="popup-menu-list link-transparency">Transparency</li>
                                                 </ul>
                                                 </div>
-                                                <div class="popup-text">
+                                                <div class="popup-text popup-text-climber">
                                                     <h1 class="popup-h1">"Our Footsteps Approach"</h1>
                                                     <h2 class="popup-h2">Sustainability strategy</h2>
                                                     <p class="popup-paragraph">At Ricola we believe in the actions we take in the here and now. 
@@ -71,7 +96,7 @@
                                                 </div>
                                             </div>
                                             <span class="exit-btn">
-                                                <i class="fas fa-times fa-2x"></i>
+                                                <i id="exit-climber" class="fas fa-times fa-2x"></i>
                                             </span>
                                 </div>
                             </div>
@@ -119,7 +144,85 @@
             <div class="herbs-container">
                 <button class="herbs-btn"><img class="herbs-img" src="/images/herbs.svg" alt="herbs"></button>
             </div>
-
+            
+            <div class="popup-bg popup-herbs">
+                <div class="popup">
+                        <img class="popup-img popup-img-herbs" src="/images/herb_intro.png" alt="">
+                            <div class="popup-info">
+                                <div class="popup-menu">
+                                <ul>
+                                    <li class="popup-menu-list link-intro-herbs">Intro</li>
+                                    <li class="popup-menu-list link-horehound">Horehound</li>
+                                    <li class="popup-menu-list link-Burnet">Burnet</li>
+                                    <li class="popup-menu-list link-Cowslip">Cowslip</li>
+                                    <li class="popup-menu-list link-Ma">Ma...</li>
+                                </ul>
+                                </div>
+                                <div class="popup-text popup-text-herbs">
+                                    <h1 class="popup-h1">Intro</h1>
+                                    <h2 class="popup-h2">Herbs</h2>
+                                    <p class="popup-paragraph">In 1940, Emil Richter, pioneer and founder of Ricola, mixed the 13 herb blend for the first time. Based on this blend, he established Ricola’s most important product, the original herb.<br><br>Today we use the same herbs to produce our fresh cough drops in different mixes and flavors.</p>
+                                    <div class="herbs-images">
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Horehound.png" alt="Swiss">
+                                            <p class="p-herbs">Horehound</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Burnet.png" alt="Swiss">
+                                            <p class="p-herbs">Burnet</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Cowslip.png" alt="Swiss">
+                                            <p class="p-herbs">Cowslip</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Seedwell.png" alt="Swiss">
+                                            <p class="p-herbs">Seedwell</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Elder.png" alt="Swiss">
+                                            <p class="p-herbs">Elder</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Ladys mantle.png" alt="Swiss">
+                                            <p class="p-herbs">Lady's mantle</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Mallow.png" alt="Swiss">
+                                            <p class="p-herbs">Mallow</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Peppermint.png" alt="Swiss">
+                                            <p class="p-herbs">Peppermint</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Sage.png" alt="Swiss">
+                                            <p class="p-herbs">Sage</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Yarrow.png" alt="Swiss">
+                                            <p class="p-herbs">Yarrow</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Plantain.png" alt="Swiss">
+                                            <p class="p-herbs">Plantain</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Thyme.png" alt="Swiss">
+                                            <p class="p-herbs">Thyme</p>
+                                        </div>
+                                        <div class="div-herbs">
+                                            <img class="inner-images-herbs" src="/images/herbs/Marshmallow.png" alt="Swiss">
+                                            <p class="p-herbs">Marshmallow</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            <span class="exit-btn">
+                                <i id="exit-herbs" class="fas fa-times fa-2x"></i>
+                            </span>
+                </div>
+            </div>
     </div>
 
 <!--------------------------- SECTION 3 ----------------------------->
