@@ -3,6 +3,8 @@ const popUpBg = document.querySelector(".popup-climber")
 const closePopUp = document.getElementById("exit-climber")
 const smallHeader = document.querySelector(".header-container")
 const logoTransform = document.querySelector(".logo")
+const changeColor = document.querySelector(".change-color")
+
 
 const intro = document.querySelector(".link-intro")
 const nature = document.querySelector(".link-nature")
@@ -40,6 +42,33 @@ const horehound = document.querySelector(".link-horehound")
 const burnet = document.querySelector(".link-Burnet")
 const popupImgHerbs = document.querySelector(".popup-img-herbs")
 const popupInfoHerbs = document.querySelector(".popup-text-herbs")
+
+// const schutzId = document.getElementById("link-schutz")
+// const morard = document.querySelector(".link-morard")
+// const linkIntroFarm = document.querySelector(".link-intro-farm")
+// const popupInfoFarm = document.querySelector(".popup-text-farm")
+// const popupImgFarm = document.querySelector(".popup-img-farm")
+
+//section 4 People
+const peopleBtn = document.querySelector(".people-btn")
+const popUpPeople = document.querySelector(".popup-people")
+const exitPeople = document.getElementById("exit-people")
+
+
+
+
+// section 4 Factory
+
+const factory = document.querySelector(".factory-btn")
+const popUpFactory = document.querySelector(".popup-factory")
+const popUpTextFactory = document.querySelector(".popup-text-factory")
+const factoryImages = document.querySelector(".popup-img-factory")
+const exitFactory = document.getElementById("exit-factory")
+const linkIntroFactory = document.querySelector(".link-intro-factory")
+const linkProcessing = document.querySelector(".link-processing")
+const linkProduction = document.querySelector(".link-production")
+
+const truckBtn = document.querySelector(".truck-btn")
 
 // ------------------------------------SECTION 1------------------------------------
 
@@ -91,6 +120,7 @@ closePopUp.addEventListener("click", () => {
 
 intro.addEventListener("click", () => {
     changeImg.src = "/images/footstepsbg.jpg";
+    changeColor.style.color = "white";
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Our Footsteps Approach'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Sustainability strategy'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
@@ -100,12 +130,45 @@ intro.addEventListener("click", () => {
 
 nature.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_nature_croped.jpg";
+    changeColor.style.color = "grey";
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
                             "<h2 class='popup-h2'>"+'INTENTION'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'CURRENT STATE'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'We work close with farmers in Switzerland to ensure high biodiversity standards. A majority of supplier is certified according to “BioSuisse“ standards and farmers in Switzerland that produce for us are adhering to high sustainable farming standards. This is not necessarily the case in our global supply chain. Through Close the Gap we have identified areas that need improvement and we wish to conduct this improvement based on a set of Ricola Principles.'+"</p>";
 })
+
+people.addEventListener("click", () => {
+    changeImg.src = "/images/footsteps_people.jpg";
+    changeColor.style.color = "black";
+    popupText.innerHTML = "<h2 class='popup-h2'>"+'Continuous deep care. '+"</h2>"+
+    "<p class='popup-paragraph'>"+'“Enriching the lives of people and the communities we engage with”'+"</p>"+
+                            "<h2 class='popup-h2'>"+'Vision'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Our vision of being a progressive and responsible employer is to support our employees in achieving their goals, to behave respectfully and to be valued by the workforce as a stable employer.'+"</p>"+
+                                "<h2 class='popup-h2'>"+'Key Project'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'The cultural transformation “We are Ricola” project was kicked-off in 2019. “We are Ricola” focuses on developing strong leadership and accountability throughout the organisation by building on the knowhow and talent of everyone.'+"</p>"+
+                                "<img class='icon-audience' src='/images/26_ricola_icon_audience_line_w.png' alt='Swiss'>";
+})
+
+business.addEventListener("click", () => {
+    changeImg.src = "/images/footsteps_business.jpg";
+    changeColor.style.color = "white";
+    popupText.innerHTML = "<h2 class='popup-h2'>"+'Vision and Ambition'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Regenerative business. Through growth inspired by nature. With confidence and consciousness growing a resilient and thriving global business. Looking to nature for inspiration, while improving our ways of doing business.'+"</p>"+
+                                "<h2 class='popup-h2'>"+'Connecting People and Business'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'We commit to build a sustainable, thriving global business. We apply our skills and knowledge to transform naturally healthy herbs into delightful products. Responding to a genuine need, we connect people to nature.<br><br>We care deeply about both.'+"</p>";
+})
+
+transparency.addEventListener("click", () => {
+    changeImg.src = "/images/footsteps_transparency.jpg";
+    changeColor.style.color = "black";
+    popupText.innerHTML = "<h2 class='popup-h2'>"+'Commitment'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Ricola is committed to thinking and acting sustainably, and for decades, this has been an important basis for the management’s decision making. The sustainability strategy is based on the stable foundation of our declaration that “Sustainability is our way of life”. This commitment places sustainability at the heart of internal processes and reinforces internal and external communication on sustainability issues.'+"</p>"+
+                                "<h2 class='popup-h2'>"+'Focus'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Our sustainability strategy focuses on the areas in which the company has the greatest impact on its stakeholders and the environment. Our herb specialties and their manufacture are at the center of our strategy, which is based on four pillars. These pillars represent the main thrusts of Ricola’s social, environ- mental and economic responsibility.'+"</p>";
+})
+
+
 
 
 
@@ -275,4 +338,98 @@ burnet.addEventListener("click", () => {
                                 "<p class='popup-paragraph'>"+'Strong odour of billy goat.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'VEGETATION'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Grassland, sparse forests, rocky mountain slopes up to 2000 m above sea level.'+"</p>";
+});
+
+// ------------------------------------SECTION 4------------------------------------
+
+
+factory.addEventListener("click", () => {
+    popUpFactory.classList.add("bg-active");
+    smallHeader.style.padding = "0.5em 3em";
+});
+
+exitFactory.addEventListener("click", () => {
+    popUpFactory.classList.remove("bg-active");
+    smallHeader.style.padding = "1.2em 3em";
+});
+
+linkIntroFactory.addEventListener("click", () => {
+    factoryImages.src = "/images/Factory_Background.jpg";
+    popUpTextFactory.innerHTML = "<h1 class='popup-h1'>"+'From alpine soil to cough drop'+"</h1>"+
+                                "<h2 class='popup-h2'>"+'“We should treat both our employees and our raw materials with care”'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Ricola has a long and rich history, they way we care for our ingredients and people are part of our culture. But that doesn’t mean that we aren’t continuously innovating in how to do what we do best, with a sustainable future in mind.'+"</p>"+
+                                "<img class='img-factory-friend' src='/images/Factory_bubble.png' alt='Ricola Friend'>"+
+                                "<p class='popup-paragraph'>"+'The recipe for our 10-herb mixture has been tested to perfection. Since 1940 it has remained virtually unchanged. Other ingredients are added to the highly concentrated extract depending on the flavor of the herb drop. We use selected aromatic herbs and sugar or sugar substitutes to enhance our recipes. Ricola is committed to ensuring that all ingredients are natural and of a high quality, and we exclusively use natural coloring agents and flavorings.'+"</p>"+
+                                "<p class='popup-paragraph'>"+'For us, sustainability is, on the one hand, about eliminating as much waste as possible. We do this by using the Lean approach. On the other hand, sustainability is also about being aware of the resources we use. This means that we are careful with our raw materials as well as the energy of our employees.'+"</p>"+
+                                "<p class='popup-paragraph'>"+'Greatness can come in small steps that have a big impact. Such as the use of aluminum-free bags, and reducing the use of polyethylene in the factory process.'+"</p>"+
+                                "<p class='popup-paragraph'>"+'Currently we are at a X% emission target. Every year since 20XX we’ve managed to decrease our emission from our factories by X%.'+"</p>";
+});
+
+linkProcessing.addEventListener("click", () => {
+    factoryImages.src = "/images/Processing_background.png";
+    popUpTextFactory.innerHTML = "<h1 class='popup-h1'>"+'Processing the fresh herbs'+"</h1>"+
+                            "<h2 class='popup-h2'>"+'At Ricola, production is a matter of strictly controlled operations. This preserves the natural ingredients and aromas.<br><br>'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Taking the herbs from the field and turning them into the end product is a long process. Even so, some steps are extremely quick. For example, we use short transport routes to deliver the freshly harvested herbs to our herb center in Laufen. Over 1,400 tons of fresh herbs are processed at the center each year. After drying, they are cleaned, cut and stored. Mixing is the final step. These herbs are used to create the unique 10-herb mixture which serves as the basis for all Ricola products.'+"</p>"+
+                                "<img class='img-factory-friend' src='/images/Processing_bubble.png' alt='Ricola Friend'>"+
+                                "<p class='popup-paragraph'>"+'The herbs are transferred from the herb center to the production facility via an underground route. The valuable ingredients are extracted from the herbs at this facility. The extraction process itself was designed by Ricola and is top secret. It was developed to ensure that the intensive aromas of the herbs are fully preserved.'+"</p>";
+});
+
+linkProduction.addEventListener("click", () => {
+    factoryImages.src = "/images/Production_background.png";
+    popUpTextFactory.innerHTML = "<h1 class='popup-h1'>"+'From alpine soil to cough drop'+"</h1>"+
+                            "<h2 class='popup-h2'>"+'“We should treat both our employees and our raw materials with care”'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Ricola has a long and rich history, they way we care for our ingredients and people are part of our culture. But that doesn’t mean that we aren’t continuously innovating in how to do what we do best, with a sustainable future in mind.'+"</p>"+
+                                "<div class='bubble-production'>"+
+                                "<img class='img-production-flex' src='/images/Production_bubble.png' alt='Ricola Friend'>"+
+                                "<img class='img-production-flex' src='/images/candy+wecare.png' alt='Ricola Friend'>"+
+                                "<img class='img-production-flex' src='/images/Production_bubble (1).png' alt='Ricola Friend'>"+
+                                "</div>"+
+                                "<p class='popup-paragraph'>"+'The recipe for our 10-herb mixture has been tested to perfection. Since 1940 it has remained virtually unchanged. Other ingredients are added to the highly concentrated extract depending on the flavor of the herb drop. We use selected aromatic herbs and sugar or sugar substitutes to enhance our recipes. Ricola is committed to ensuring that all ingredients are natural and of a high quality, and we exclusively use natural coloring agents and flavorings.'+"</p>"+
+                                "<p class='popup-paragraph'>"+'For us, sustainability is, on the one hand, about eliminating as much waste as possible. We do this by using the Lean approach. On the other hand, sustainability is also about being aware of the resources we use. This means that we are careful with our raw materials as well as the energy of our employees.'+"</p>"+
+                                "<p class='popup-paragraph'>"+'Greatness can come in small steps that have a big impact. Such as the use of aluminum-free bags, and reducing the use of polyethylene in the factory process.'+"</p>"+
+                                "<p class='popup-paragraph'>"+'Currently we are at a X% emission target. Every year since 20XX we’ve managed to decrease our emission from our factories by X%.'+"</p>";
+});
+
+// People
+
+peopleBtn.addEventListener("click", () => {
+    popUpPeople.classList.add("bg-active");
+    smallHeader.style.padding = "0.5em 3em";
+});
+
+exitPeople.addEventListener("click", () => {
+    popUpPeople.classList.remove("bg-active");
+    smallHeader.style.padding = "1.2em 3em";
+});
+
+// Truck
+
+truckBtn.addEventListener("click", () => {
+    popupAirplane.classList.add("bg-active");
+    smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
+});
+
+closePopupAirplane.addEventListener("click", () => {
+    popupAirplane.classList.remove("bg-active");
+    smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
+});
+
+exportMenu.addEventListener("click", () => {
+    popupImgAirplane.src = "/images/export.png";
+    popupInfoAirplane.innerHTML = "<h1 class='popup-h1'>"+'Export'+"</h1>"+
+                            "<h2 class='popup-h2'>"+'Providing Fresh Alpine Herbs'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Ricola is a global family company. We provide fresh alpine herbs in the form of cough drops on a worldwide scale. Our mission is to bring freshness and health of the swiss alps to anyone, anywhere.'+"</p>"+
+                                "<h2 class='popup-h2'>"+'Sustainable Supply Chain'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Since all of Ricola’s production takes place in Switzerland we export all of our product from there. We ship out around X tons of product every year to Y countries. To do this in the most sustainable way we follow our sustainable supply chain footsteps to carry out this operation.'+"</p>";
+});
+
+importMenu.addEventListener("click", () => {
+    popupImgAirplane.src = "/images/Import.png";
+    popupInfoAirplane.innerHTML = "<h1 class='popup-h1'>"+'Imported herbs'+"</h1>"+
+                            "<h2 class='popup-h2'>"+'Established Ecosystem'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Here at Ricola we pride ourselves on growing 97% of all our herbs right here in the swiss alps. With the help of over 100 amazing farmers we have established an ecosystem of fresh near produced raw materials.'+"</p>"+
+                                "<h2 class='popup-h2'>"+'We are not yet perfect'+"</h2>"+
+                                "<p class='popup-paragraph'>"+'Although we are not perfect it would be impossible to find all the herbs we require for our healthy fresh products in Switzerland. Especially since we are a global company.<br><br>Therefore we import 3% of our herbs from the awesome, hard working farmers in India and other locations around the world.'+"</p>";
 });

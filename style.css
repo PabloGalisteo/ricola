@@ -164,7 +164,7 @@ button:focus {
     -webkit-transform: scale(1);
   }
 }
-    
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -224,7 +224,6 @@ button:focus {
 .popup-img {
   width: 100%;
 }
-
 
 .popup-info {
   position: absolute;
@@ -328,7 +327,7 @@ button:focus {
     -webkit-transform: scale(0.85);
   }
 }
-    
+
 @keyframes pulsefarm {
   0% {
     transform: scale(0.85);
@@ -374,7 +373,7 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
-  z-index: 1;
+  z-index: 0;
 }
 
 .herbs-img {
@@ -455,7 +454,7 @@ button:focus {
 .truck-btn {
   position: absolute;
   margin-top: -51%;
-  margin-left: -5%;
+  margin-left: 2%;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -466,7 +465,7 @@ button:focus {
 }
 
 .truck-img {
-  width:  24%;
+  width: 24%;
 }
 
 @-webkit-keyframes pulsefarm {
@@ -480,7 +479,7 @@ button:focus {
     -webkit-transform: scale(0.85);
   }
 }
-    
+
 @keyframes pulsefarm {
   0% {
     transform: scale(0.85);
@@ -491,6 +490,81 @@ button:focus {
   100% {
     transform: scale(0.85);
   }
+}
+
+/* Pablo's part */
+
+.popup-img-people {
+  position: relative;
+}
+
+.yellow-people {
+  position: absolute;
+  margin-right: 50%;
+}
+
+.icons-people {
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%)
+    contrast(80%);
+  width: 35%;
+}
+
+.second-icon {
+  width: 85%;
+}
+.third-icon {
+  width: 15%;
+}
+.fifth-icon {
+  width: 50%;
+}
+
+.grid-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 4%;
+  grid-column-gap: 4%;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.gap-people {
+  margin-top: 3em;
+}
+
+.text-people {
+  text-align: center;
+  font-family: var(--font-text);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.factory-btn {
+  position: absolute;
+  margin-top: -75%;
+  margin-left: 52%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.img-factory-friend {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.img-production-flex {
+  width: 19%;
+  margin: 0em 1em;
+}
+
+.bubble-production {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
 /*------------------------------------FOOTER---------------------------------------*/
