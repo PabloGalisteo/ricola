@@ -118,18 +118,39 @@ button:focus {
   display: block;
 }
 
-.caramel {
+.caramel-btn {
   position: absolute;
-  margin-top: -103.4%;
-  margin-left: 58.5%;
-  width: 12%;
+  margin-top: -103.9%;
+  margin-left: 40.8%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.caramel {
+  width: 28%;
+  transition: transform .2s;
+}
+
+.caramel:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3); 
+}
+
+.caramel-wheel {
+  position: absolute;
+  margin-top: -103.9%;
+  margin-left: 40.8%;
+  width: 40%;
+  opacity: 20%;
 }
 
 .airplane-btn {
   position: absolute;
   margin-top: -81.5%;
   margin-left: 12%;
-  width: 11%;
+  width: 13%;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -137,6 +158,17 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulse;
   animation-name: pulse;
+}
+
+.airplane {
+  width: 100%;
+  transition: transform .2s;
+}
+
+.airplane:hover{
+  -ms-transform: scale(1.16); /* IE 9 */
+  -webkit-transform: scale(1.16); /* Safari 3-8 */
+  transform: scale(1.16); 
 }
 
 .climber-btn {
@@ -151,6 +183,17 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulse;
   animation-name: pulse;
+}
+
+.climber-hover {
+  width: 100%;
+  transition: transform .2s;
+}
+
+.climber-hover:hover{
+  -ms-transform: scale(1.17); /* IE 9 */
+  -webkit-transform: scale(1.17); /* Safari 3-8 */
+  transform: scale(1.17); 
 }
 
 @-webkit-keyframes pulse {
@@ -180,7 +223,7 @@ button:focus {
 .text-mountain {
   position: absolute;
   margin-top: -54.5%;
-  margin-left: 28.3%;
+  margin-left: 28.5%;
   width: 30.1%;
   font-family: var(--font-titel-bold);
   color: var(--white);
@@ -250,15 +293,16 @@ button:focus {
   display: block;
   margin-bottom: 1em;
   padding: 0em 0.7em 0.1em 0em;
+  /* text-decoration-line: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.2em; */
 }
 
-/* .popup-menu-list:hover {
-  border-bottom: 3px solid var(--white);
+.popup-menu-list:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.2em;
 }
-
-.popup-menu-list.active {
-  border-bottom: 3px solid var(--white);
-} */
 
 .popup-text {
   overflow: auto;
@@ -295,6 +339,11 @@ button:focus {
   top: 5em;
   position: absolute;
 }
+
+.icon-audience {
+  width: 31%;
+  margin-top: 0.8em;
+}
 /*------------------------------------SECTION 2---------------------------------------*/
 
 .section2 {
@@ -314,6 +363,17 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
+}
+
+.farm-img {
+  width: 100%;
+  transition: transform .2s;
+}
+
+.farm-img:hover{
+  -ms-transform: scale(1.14); /* IE 9 */
+  -webkit-transform: scale(1.14); /* Safari 3-8 */
+  transform: scale(1.14); 
 }
 
 @-webkit-keyframes pulsefarm {
@@ -378,7 +438,15 @@ button:focus {
 
 .herbs-img {
   width: 80%;
+  transition: transform .2s;
 }
+
+.herbs-img:hover{
+  -ms-transform: scale(1.14); /* IE 9 */
+  -webkit-transform: scale(1.14); /* Safari 3-8 */
+  transform: scale(1.14); 
+}
+
 
 .herbs-images {
   display: flex;
@@ -438,61 +506,16 @@ button:focus {
   animation-name: pulsefarm;
 }
 
-.factory-btn {
-  position: absolute;
-  margin-top: -76%;
-  margin-left: 50%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  animation: pulse 3s infinite;
-  animation-direction: normal;
-  -webkit-animation-name: pulsefarm;
-  animation-name: pulsefarm;
+.people-img {
+  width: 80%;
+  transition: transform .2s;
 }
 
-.truck-btn {
-  position: absolute;
-  margin-top: -51%;
-  margin-left: 2%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  animation: pulse 3s infinite;
-  animation-direction: normal;
-  -webkit-animation-name: pulsefarm;
-  animation-name: pulsefarm;
+.people-img:hover{
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
 }
-
-.truck-img {
-  width: 24%;
-}
-
-@-webkit-keyframes pulsefarm {
-  0% {
-    -webkit-transform: scale(0.85);
-  }
-  50% {
-    -webkit-transform: scale(0.9);
-  }
-  100% {
-    -webkit-transform: scale(0.85);
-  }
-}
-
-@keyframes pulsefarm {
-  0% {
-    transform: scale(0.85);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(0.85);
-  }
-}
-
-/* Pablo's part */
 
 .popup-img-people {
   position: relative;
@@ -500,13 +523,15 @@ button:focus {
 
 .yellow-people {
   position: absolute;
-  margin-right: 50%;
+  margin-right: 45%;
+  width: 35%;
 }
 
 .icons-people {
   filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%)
     contrast(80%);
   width: 35%;
+  margin-top: 1em;
 }
 
 .second-icon {
@@ -541,11 +566,26 @@ button:focus {
 
 .factory-btn {
   position: absolute;
-  margin-top: -75%;
-  margin-left: 52%;
+  margin-top: -77%;
+  margin-left: 50%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
+}
+
+.factory-img {
+  width: 100%;
+  transition: transform .2s;
+}
+
+.factory-img:hover{
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
 }
 
 .img-factory-friend {
@@ -565,6 +605,54 @@ button:focus {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
+}
+
+.truck-btn {
+  position: absolute;
+  margin-top: -51%;
+  margin-left: -5%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
+}
+
+.truck-img {
+  width: 24%;
+  transition: transform .2s;
+}
+
+.truck-img:hover{
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15); 
+}
+
+@-webkit-keyframes pulsefarm {
+  0% {
+    -webkit-transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+  }
+}
+
+@keyframes pulsefarm {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.85);
+  }
 }
 
 /*------------------------------------FOOTER---------------------------------------*/

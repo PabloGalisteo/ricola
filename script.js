@@ -69,6 +69,7 @@ const linkProcessing = document.querySelector(".link-processing")
 const linkProduction = document.querySelector(".link-production")
 
 const truckBtn = document.querySelector(".truck-btn")
+const ricolaSound = new Audio("/images/ricola_short.mp3");
 
 // ------------------------------------SECTION 1------------------------------------
 
@@ -78,6 +79,7 @@ airplaneBtn.addEventListener("click", () => {
     popupAirplane.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    ricolaSound.play();
 });
 
 closePopupAirplane.addEventListener("click", () => {
@@ -346,11 +348,13 @@ burnet.addEventListener("click", () => {
 factory.addEventListener("click", () => {
     popUpFactory.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
 });
 
 exitFactory.addEventListener("click", () => {
     popUpFactory.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
 });
 
 linkIntroFactory.addEventListener("click", () => {
@@ -395,11 +399,13 @@ linkProduction.addEventListener("click", () => {
 peopleBtn.addEventListener("click", () => {
     popUpPeople.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
 });
 
 exitPeople.addEventListener("click", () => {
     popUpPeople.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
 });
 
 // Truck
