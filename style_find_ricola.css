@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #ffcc00;
+  --green: #005245;
+  --font-titel: 'Frutiger Next', serif;
+  --font-titel-bold: 'FrutigerNextPro-Bold', serif;
+  --font-text: 'ff-meta-serif-web-pro', serif;
+  --white: #ffffff;
+}
+
+/* Header */
+
+header {
+  background-color: var(--yellow);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  padding: 1.2em 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 6em;
+  transition: 0.5s;
+}
+
+.fa-bars {
+  color: var(--green);
+}
+
+/* First block */
+
+.bg-yellow {
+  background-color: var(--yellow);
+  height: 47em;
+}
+
+.ricola-products {
+  z-index: 1;
+  height: 47em;
+  float: right;
+}
+
+.main-text {
+  position: absolute;
+  width: 593px;
+  height: 157px;
+  left: 291px;
+  top: 147px;
+
+  font-family: var(--font-titel);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 79px;
+  color: var(--green);
+}
+
+.arrow-down {
+  position: absolute;
+  width: 114px;
+  height: 114px;
+  left: 448px;
+  top: 623px;
+}
+
+/* Second block */
+
+.bg-green {
+  background-color: var(--green);
+  height: 102em;
+}
+
+.need-box {
+  position: absolute;
+  width: 1036px;
+  height: 1070px;
+  left: 283px;
+  top: 946px;
+}
+
+.need-of {
+  color: var(--yellow);
+  font-family: var(--font-titel-bold);
+  font-size: 4rem;
+  margin-bottom: 1em;
+}
+
+.main-btns {
+  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  font-size: 2rem;
+}
+
+.refresh-btn,
+.throat-btn {
+  width: 18rem;
+  height: 4.13rem;
+  font-family: var(--font-text);
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.throat-btn {
+  left: 720px;
+  background-color: var(--green);
+  color: var(--yellow);
+  border: 1px solid;
+  border-color: var(--yellow);
+}
+
+.refresh-btn {
+  left: 286px;
+  background-color: var(--yellow);
+  color: var(--green);
+  border: none;
+}
+
+.qualities {
+  color: var(--yellow);
+  font-family: var(--font-titel-bold);
+  text-align: left;
+  font-size: 4rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.grid-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 4%;
+  grid-column-gap: 4%;
+  justify-content: space-around;
+  margin-right: 8rem;
+  justify-items: center;
+  margin-left: 0rem;
+}
+
+.undertext {
+  font-size: 1rem;
+  color: var(--yellow);
+  font-family: var(--font-text);
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.align-text {
+  display: flex;
+  justify-content: center;
+}
+
+.view-products {
+  width: 18rem;
+  height: 4.13rem;
+  font-family: var(--font-text);
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: var(--yellow);
+  color: var(--green);
+  border: none;
+  position: absolute;
+  margin-top: 6em;
+  margin-left: 19em;
+}
+
+/********************************* final product page *********************************/
+
+.tailored {
+  color: var(--yellow);
+  font-size: 4rem;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.ricola-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 12%;
+  grid-column-gap: 12%;
+  justify-content: center;
+  margin-right: 14em;
+}
+
+.bg-green2 {
+  height: 90em;
+  background-color: var(--green);
+}
+
+/************************** Footer ******************************/
+
+.container-footer {
+  background-color: rgba(0, 82, 69, 0.4);
+  text-align: center;
+  padding: 3em;
+  margin: auto;
+  font-family: var(--font-titel);
+  color: var(--green);
+  font-size: 0.75em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-one-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.text-two-footer {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+  padding: 0em 1em 0em 1em;
+}
+
+.text-one-footer {
+  padding-bottom: 1.2em;
+}
+
+hr {
+  width: 5em;
+  margin: auto;
+  height: 0.1em;
+  background-color: var(--green);
+  border: none;
+}
+
+.text-two-footer {
+  padding-top: 1.2em;
+}
+
+.cart-button {
+  border: 0.05em solid var(--green);
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 0.25em;
+  padding: 0.5em 1.9em 0.5em 1.9em;
+  font-family: var(--font-titel);
+  font-size: 0.875rem;
+  margin-top: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  margin-bottom: 1.7em;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cart {
+  margin-right: 1em;
+}
+
+.follow-ricola-text {
+  font-family: var(--font-titel-bold);
+  margin-bottom: 1.65em;
+  font-size: 0.73rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  height: 2em;
+  padding: 0em 1.5em 0em 1.5em;
+}
