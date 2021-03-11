@@ -26,10 +26,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: 0.5s;
 }
 
 .logo {
   width: 6em;
+  transition: 0.5s;
 }
 
 .fa-bars {
@@ -68,7 +70,7 @@ bg-images {
 
 .main-button {
   position: absolute;
-  margin-left: 11em;
+  margin-left: 10.5em;
   margin-top: 1.6em;
   display: flex;
   align-items: center;
@@ -78,15 +80,16 @@ bg-images {
   background-color: transparent;
   text-decoration: none;
   border-radius: 40em;
-  padding: 0.5em 1.9em 0.5em 1.9em;
+  padding: 0.45em 1.9em 0.45em 1.9em;
   font-family: var(--font-titel);
+  font-weight: bolder;
   font-size: 0.875rem;
   z-index: 1;
 }
 
 .button-text {
   color: var(--green);
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 button:focus {
@@ -110,44 +113,86 @@ button:focus {
 /*------------------------------------SECTION 1---------------------------------------*/
 
 .section1 {
-  margin-top: 1em;
+  margin-top: 2em;
   position: relative;
   display: block;
 }
 
 .caramel {
   position: absolute;
-  margin-top: -102.4%;
+  margin-top: -103.4%;
   margin-left: 58.5%;
   width: 12%;
 }
 
 .airplane-btn {
   position: absolute;
-  margin-top: -81%;
+  margin-top: -81.5%;
   margin-left: 12%;
   width: 11%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
 .climber-btn {
   position: absolute;
   margin-top: -48%;
-  margin-left: 71%;
+  margin-left: 70%;
   width: 10%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 
-.popup-bg,
-.popup-farm {
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.09);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+    
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.text-mountain {
+  position: absolute;
+  margin-top: -54.5%;
+  margin-left: 28.3%;
+  width: 30.1%;
+  font-family: var(--font-titel-bold);
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 1.37em;
+}
+
+.popup-bg {
   position: fixed;
   width: 100%;
   height: 100vh;
-  top: 3%;
+  top: 3.5%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -158,6 +203,7 @@ button:focus {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s opacity 0.5s;
+  transition: 0.5s;
 }
 
 .bg-active {
@@ -166,26 +212,26 @@ button:focus {
 }
 
 .popup {
-  width: 94.3%;
-  height: 84%;
+  width: 92.7%;
+  height: 83.5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .popup-img {
   width: 100%;
 }
 
+
 .popup-info {
   position: absolute;
   color: var(--white);
-  width: 42%;
+  width: 44%;
   height: 75vh;
-  /* top: 15%; */
-  margin-right: -42em;
-  /* bottom: 15%; */
+  margin-right: -35.1em;
   padding: 3em 2em 3em 3.5em;
   background-color: rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(10px);
@@ -196,36 +242,23 @@ button:focus {
 
 .popup-menu {
   font-family: var(--font-titel);
-  font-size: 1.5rem;
+  font-size: 1.55rem;
 }
 
 .popup-menu-list {
   cursor: pointer;
   float: left;
   display: block;
-  margin-bottom: 1.2em;
-  padding: 0em 0.6em 0.1em 0em;
+  margin-bottom: 1em;
+  padding: 0em 0.7em 0.1em 0em;
 }
 
-.popup-menu-list:hover {
+/* .popup-menu-list:hover {
   border-bottom: 3px solid var(--white);
 }
 
 .popup-menu-list.active {
   border-bottom: 3px solid var(--white);
-  opacity: 0;
-}
-
-/* underline only in intro now
-.link-intro {
-  border-bottom: 2px solid #ffffff;
-  margin-bottom: 1.5em;
-} */
-
-/* .link-nature {
-  border-bottom: 2px solid #ffffff;
-  margin-bottom: 1.5em;
-  display: none;
 } */
 
 .popup-text {
@@ -236,21 +269,22 @@ button:focus {
 
 .popup-h1 {
   font-family: var(--font-titel);
-  padding-bottom: 0.7em;
-  font-size: 1.8rem;
+  margin-bottom: 1.1em;
+  font-size: 1.3rem;
 }
 
 .popup-h2 {
-  font-size: 1.3rem;
+  font-size: 1.08rem;
   font-family: var(--font-titel);
-  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .popup-paragraph {
   font-family: var(--font-titel);
   letter-spacing: 0.01em;
   line-height: 1.3em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  font-size: 0.93rem;
 }
 
 .inner-images {
@@ -258,7 +292,7 @@ button:focus {
 }
 
 .exit-btn {
-  left: 4em;
+  left: 4.55em;
   top: 5em;
   position: absolute;
 }
@@ -277,13 +311,50 @@ button:focus {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
+}
+
+@-webkit-keyframes pulsefarm {
+  0% {
+    -webkit-transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+  }
+}
+    
+@keyframes pulsefarm {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+
+.swiss-div {
+  display: flex;
+  justify-content: center;
+}
+
+.swiss-img {
+  width: 53%;
 }
 
 .bubble-people {
-  /* overflow: none; */
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
+  margin-top: 1.4em;
 }
 
 .bubble-woman,
@@ -299,7 +370,11 @@ button:focus {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* z-index: 1; */
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
+  z-index: 1;
 }
 
 .herbs-img {
@@ -352,30 +427,70 @@ button:focus {
 /*------------------------------------SECTION 4---------------------------------------*/
 .people-btn {
   position: absolute;
-  margin-top: -92%;
+  margin-top: -93%;
   margin-left: 6%;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  width: 38%;
+  width: 36%;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
 }
 
 .factory-btn {
   position: absolute;
-  margin-top: -75%;
-  margin-left: 52%;
+  margin-top: -76%;
+  margin-left: 50%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
 }
 
 .truck-btn {
   position: absolute;
   margin-top: -51%;
-  margin-left: 32%;
+  margin-left: -5%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  animation: pulse 3s infinite;
+  animation-direction: normal;
+  -webkit-animation-name: pulsefarm;
+  animation-name: pulsefarm;
+}
+
+.truck-img {
+  width:  24%;
+}
+
+@-webkit-keyframes pulsefarm {
+  0% {
+    -webkit-transform: scale(0.85);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+  }
+}
+    
+@keyframes pulsefarm {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.85);
+  }
 }
 
 /*------------------------------------FOOTER---------------------------------------*/

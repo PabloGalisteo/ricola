@@ -2,6 +2,7 @@ const climberBtn = document.querySelector(".climber-btn")
 const popUpBg = document.querySelector(".popup-climber")
 const closePopUp = document.getElementById("exit-climber")
 const smallHeader = document.querySelector(".header-container")
+const logoTransform = document.querySelector(".logo")
 
 const intro = document.querySelector(".link-intro")
 const nature = document.querySelector(".link-nature")
@@ -11,7 +12,6 @@ const transparency = document.querySelector(".link-transparency")
 
 const popupText = document.querySelector(".popup-text-climber")
 const changeImg = document.querySelector(".popup-img-climber")
-const linkIntro = document.querySelector(".link-intro")
 
 const airplaneBtn = document.querySelector(".airplane-btn")
 const popupAirplane = document.querySelector(".popup-airplane")
@@ -26,7 +26,7 @@ const farmBtn = document.querySelector(".farm-btn")
 const popUpFarm = document.querySelector(".popup-farm")
 const closePopUpFarm = document.getElementById("exit-farm")
 
-const schutz = document.getElementById("link-schutz")
+const schutz = document.querySelector(".link-schutz")
 const morard = document.querySelector(".link-morard")
 const linkIntroFarm = document.querySelector(".link-intro-farm")
 const popupInfoFarm = document.querySelector(".popup-text-farm")
@@ -41,7 +41,6 @@ const burnet = document.querySelector(".link-Burnet")
 const popupImgHerbs = document.querySelector(".popup-img-herbs")
 const popupInfoHerbs = document.querySelector(".popup-text-herbs")
 
-
 // ------------------------------------SECTION 1------------------------------------
 
 // Airplane slides
@@ -49,11 +48,13 @@ const popupInfoHerbs = document.querySelector(".popup-text-herbs")
 airplaneBtn.addEventListener("click", () => {
     popupAirplane.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
 });
 
 closePopupAirplane.addEventListener("click", () => {
     popupAirplane.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
 });
 
 exportMenu.addEventListener("click", () => {
@@ -79,15 +80,17 @@ importMenu.addEventListener("click", () => {
 climberBtn.addEventListener("click", () => {
     popUpBg.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
 });
 
 closePopUp.addEventListener("click", () => {
     popUpBg.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
 });
 
 intro.addEventListener("click", () => {
-    changeImg.src = "/images/footsteps.png";
+    changeImg.src = "/images/footstepsbg.jpg";
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Our Footsteps Approach'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Sustainability strategy'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
@@ -114,19 +117,23 @@ nature.addEventListener("click", () => {
 farmBtn.addEventListener("click", () => {
     popUpFarm.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
 });
 
 closePopUpFarm.addEventListener("click", () => {
     popUpFarm.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
 });
 
 linkIntroFarm.addEventListener("click", () => {
-    popupImgFarm.src = "/images/Farm_Intro_Background.jpg";
+    popupImgFarm.src = "/images/Farm_Intro_Background test.jpg";
     popupInfoFarm.innerHTML = "<h1 class='popup-h1'>"+'Our growing Regions'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Robust and pure'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Our herbs grow at sites in Valais, Emmental, Val Poschiavo, the southern foothills of the Jura mountains and Central Switzerland. Over one hundred highly experienced herb farmers attend to the small plants that thrive in the soil types that are unique to the Swiss mountains. This is where the energy in every Ricola sweet comes from.'+"</p>"+
-                                "<img class='inner-images' src='/images/Swiss.svg' alt='Swiss'>"+
+                                "<div class='swiss-div'>"+
+                                "<img class='inner-images swiss-img' src='/images/Swiss.svg' alt='Swiss'>"+
+                                "</div>"+
                                 "<p class='popup-paragraph'>"+'Every herb has unique requirements that need to be met if it is to become healthy and strong. This is why our cultivation methods are aligned with the various climates, sites and soil conditions. In Emmental and the southern foothills of the Jura mountains, acidic soil and relatively high rainfall create the ideal environment in which to grow peppermint crops. Meanwhile, the warm, dry climate and light, stony soil in Valais and the Val Poschiavo valley – sometimes at altitudes of 1,000 metres above sea level – are ideal for the cultivation of sage and thyme. <br><br> The harsh mountain climate keeps the herbs used in Ricola’s products robust and pure. We use growing regions that are situated as far away from industrial areas and traffic as possible. This enables us to protect our herbs and prevent them from coming into contact with pollutants and other harmful substances.'+"</p>";
 });
 
@@ -143,7 +150,7 @@ schutz.addEventListener("click", () => {
 });
 
 morard.addEventListener("click", () => {
-    popupImgFarm.src = "/images/Morard_Background.png";
+    popupImgFarm.src = "/images/Morard_Background test.png";
     popupInfoFarm.innerHTML = "<h1 class='popup-h1'>"+'The Morard family'+"</h1>"+
                             "<h2 class='popup-h2'>"+'“Mountain people have always used herbs. These habits were passed down to me from my parents.”<br><br>'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Hailing from Grimisuat, the Morard family grows the mint used in Ricola Glacier Mints on the moraine soil that the canton of Valais is famous for.'+"</p>"+
@@ -159,11 +166,13 @@ morard.addEventListener("click", () => {
 herbsBtn.addEventListener("click", () => {
     popupHerbs.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
+    logoTransform.style.width = "4.5em";
 });
 
 closePopupHerbs.addEventListener("click", () => {
     popupHerbs.classList.remove("bg-active");
     smallHeader.style.padding = "1.2em 3em";
+    logoTransform.style.width = "6em";
 });
 
 introHerbs.addEventListener("click", () => {
@@ -235,7 +244,7 @@ horehound.addEventListener("click", () => {
                                 "<p class='popup-paragraph'>"+'The Latin name, marrubium vulgare, is derived from two Hebrew terms: mar, meaning “bitter”, and rob, meaning “much”. The taste of horehound also contributes to the name, with vulgare meaning “simple” or “common”.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'MYTHOLOGY'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'In Germanic mythology, the horehound symbolizes a plant struck by lightning. The thunder god Thor is said to have sent the lightning bolt down to Earth. The Germanic people believed that the horehound prevented lightning from striking a person with no faith in god and has carried its power inside it ever since, as evidenced by the herb’s white floral crown.'+"</p>"+
-                                "<h2 class='popup-h2'>"+'CHARACTERISTICS'+"</h2>"+
+                                "<h2 class='popup-h2'>"+'CHARACTERISTICS<br><br>'+"</h2>"+
                                 "<h2 class='popup-h2'>"+'PLANT FAMILY'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Lamiaceae (labiate)'+"</p>"+
                                 "<h2 class='popup-h2'>"+'FLOWERING SEASON'+"</h2>"+
@@ -255,7 +264,7 @@ burnet.addEventListener("click", () => {
                                 "<p class='popup-paragraph'>"+'The Latin plant genus pimpinella saxifraga may come from the word bipinula, which roughly means “double p  innate” and describes the shape of the leaves. Saxifraga means “stone-breaker” and refers to the herb’s special power or cultivation site.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'MYTHOLOGY'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Burnet, a cure for the plague?<br><br>Like ginseng for the Chinese or eleuthero for the Russians, burnet was an elixir and essential tonic for the Native Americans. “Eat garlic and burnet to preserve your health,” was the advice that our forefathers lived by in the Middle Ages – they believed that by purifying the air they breathed, they would be protected against the plague.'+"</p>"+
-                                "<h2 class='popup-h2'>"+'CHARACTERISTICS'+"</h2>"+
+                                "<h2 class='popup-h2'>"+'CHARACTERISTICS<br><br>'+"</h2>"+
                                 "<h2 class='popup-h2'>"+'PLANT FAMILY'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Umbelliferae'+"</p>"+
                                 "<h2 class='popup-h2'>"+'FLOWERING SEASON'+"</h2>"+
