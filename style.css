@@ -120,30 +120,30 @@ button:focus {
 
 .caramel-btn {
   position: absolute;
-  margin-top: -103.9%;
-  margin-left: 40.8%;
+  margin-top: -111.4%;
+  margin-left: 47.5%;
+  width: 30%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .caramel {
-  width: 28%;
+  width: 112%;
   transition: transform .2s;
 }
 
-.caramel:hover {
-  -ms-transform: scale(1.3); /* IE 9 */
-  -webkit-transform: scale(1.3); /* Safari 3-8 */
-  transform: scale(1.3); 
-}
+  .caramel:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  background:url('/images/ricola\ wheel.svg');
+  background-position-y: 32%;
+  background-position-x: 49%;
+  background-size: 20em;
+  background-repeat: no-repeat;
 
-.caramel-wheel {
-  position: absolute;
-  margin-top: -103.9%;
-  margin-left: 40.8%;
-  width: 40%;
-  opacity: 20%;
 }
 
 .airplane-btn {
@@ -299,6 +299,12 @@ button:focus {
 }
 
 .popup-menu-list:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.2em;
+}
+
+.popup-menu-underline {
   text-decoration-line: underline;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.2em;

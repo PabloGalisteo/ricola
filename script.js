@@ -1,10 +1,12 @@
+
+const caramelBtn = document.querySelector(".caramel-btn")
+
 const climberBtn = document.querySelector(".climber-btn")
 const popUpBg = document.querySelector(".popup-climber")
 const closePopUp = document.getElementById("exit-climber")
 const smallHeader = document.querySelector(".header-container")
 const logoTransform = document.querySelector(".logo")
 const changeColor = document.querySelector(".change-color")
-
 
 const intro = document.querySelector(".link-intro")
 const nature = document.querySelector(".link-nature")
@@ -53,8 +55,7 @@ const popupInfoHerbs = document.querySelector(".popup-text-herbs")
 const peopleBtn = document.querySelector(".people-btn")
 const popUpPeople = document.querySelector(".popup-people")
 const exitPeople = document.getElementById("exit-people")
-
-
+const linkPeople = document.querySelector(".link-intro-people")
 
 
 // section 4 Factory
@@ -73,13 +74,23 @@ const ricolaSound = new Audio("/images/ricola_short.mp3");
 
 // ------------------------------------SECTION 1------------------------------------
 
+//Caramel button
+
+ricolaSound.addEventListener("ended", function(){
+    location.href = "https://www.ricola.com/en-gb/products/all-products";
+});
+
+caramelBtn.addEventListener("click", function() {
+    ricolaSound.play();
+});
+
 // Airplane slides
 
 airplaneBtn.addEventListener("click", () => {
     popupAirplane.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
-    ricolaSound.play();
+    importMenu.classList.add("popup-menu-underline");
 });
 
 closePopupAirplane.addEventListener("click", () => {
@@ -90,6 +101,8 @@ closePopupAirplane.addEventListener("click", () => {
 
 exportMenu.addEventListener("click", () => {
     popupImgAirplane.src = "/images/export.png";
+    exportMenu.classList.add("popup-menu-underline");
+    importMenu.classList.remove("popup-menu-underline");
     popupInfoAirplane.innerHTML = "<h1 class='popup-h1'>"+'Export'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Providing Fresh Alpine Herbs'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Ricola is a global family company. We provide fresh alpine herbs in the form of cough drops on a worldwide scale. Our mission is to bring freshness and health of the swiss alps to anyone, anywhere.'+"</p>"+
@@ -99,6 +112,8 @@ exportMenu.addEventListener("click", () => {
 
 importMenu.addEventListener("click", () => {
     popupImgAirplane.src = "/images/Import.png";
+    importMenu.classList.add("popup-menu-underline");
+    exportMenu.classList.remove("popup-menu-underline");
     popupInfoAirplane.innerHTML = "<h1 class='popup-h1'>"+'Imported herbs'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Established Ecosystem'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Here at Ricola we pride ourselves on growing 97% of all our herbs right here in the swiss alps. With the help of over 100 amazing farmers we have established an ecosystem of fresh near produced raw materials.'+"</p>"+
@@ -112,6 +127,7 @@ climberBtn.addEventListener("click", () => {
     popUpBg.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    intro.classList.add("popup-menu-underline");
 });
 
 closePopUp.addEventListener("click", () => {
@@ -123,6 +139,11 @@ closePopUp.addEventListener("click", () => {
 intro.addEventListener("click", () => {
     changeImg.src = "/images/footstepsbg.jpg";
     changeColor.style.color = "white";
+    intro.classList.add("popup-menu-underline");
+    nature.classList.remove("popup-menu-underline");
+    people.classList.remove("popup-menu-underline");
+    transparency.classList.remove("popup-menu-underline");
+    business.classList.remove("popup-menu-underline");
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Our Footsteps Approach'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Sustainability strategy'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
@@ -133,6 +154,11 @@ intro.addEventListener("click", () => {
 nature.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_nature_croped.jpg";
     changeColor.style.color = "grey";
+    intro.classList.remove("popup-menu-underline");
+    nature.classList.add("popup-menu-underline");
+    people.classList.remove("popup-menu-underline");
+    transparency.classList.remove("popup-menu-underline");
+    business.classList.remove("popup-menu-underline");
     popupText.innerHTML = "<h1 class='popup-h1'>"+'Beyond Zero Twards Positive Enviromental impact'+"</h1>"+
                             "<h2 class='popup-h2'>"+'INTENTION'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Understand how we can apply our sourcing standards from Switzerland in our global supply chain. We have high standards in our herb farming sourcing.<br> This footstep aims to explore how we can leverage and transfer our best practices (a combination of Swiss standards and Thomas Aeschlimann’s good work) to our global supply chain, in order to promote biodiversity and sustainable farming practices, while reducing potential reputational risks.'+"</p>"+
@@ -143,6 +169,11 @@ nature.addEventListener("click", () => {
 people.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_people.jpg";
     changeColor.style.color = "black";
+    intro.classList.remove("popup-menu-underline");
+    nature.classList.remove("popup-menu-underline");
+    people.classList.add("popup-menu-underline");
+    transparency.classList.remove("popup-menu-underline");
+    business.classList.remove("popup-menu-underline");
     popupText.innerHTML = "<h2 class='popup-h2'>"+'Continuous deep care. '+"</h2>"+
     "<p class='popup-paragraph'>"+'“Enriching the lives of people and the communities we engage with”'+"</p>"+
                             "<h2 class='popup-h2'>"+'Vision'+"</h2>"+
@@ -155,6 +186,11 @@ people.addEventListener("click", () => {
 business.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_business.jpg";
     changeColor.style.color = "white";
+    intro.classList.remove("popup-menu-underline");
+    nature.classList.remove("popup-menu-underline");
+    people.classList.remove("popup-menu-underline");
+    transparency.classList.remove("popup-menu-underline");
+    business.classList.add("popup-menu-underline");
     popupText.innerHTML = "<h2 class='popup-h2'>"+'Vision and Ambition'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Regenerative business. Through growth inspired by nature. With confidence and consciousness growing a resilient and thriving global business. Looking to nature for inspiration, while improving our ways of doing business.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'Connecting People and Business'+"</h2>"+
@@ -164,6 +200,11 @@ business.addEventListener("click", () => {
 transparency.addEventListener("click", () => {
     changeImg.src = "/images/footsteps_transparency.jpg";
     changeColor.style.color = "black";
+    intro.classList.remove("popup-menu-underline");
+    nature.classList.remove("popup-menu-underline");
+    people.classList.remove("popup-menu-underline");
+    transparency.classList.add("popup-menu-underline");
+    business.classList.remove("popup-menu-underline");
     popupText.innerHTML = "<h2 class='popup-h2'>"+'Commitment'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Ricola is committed to thinking and acting sustainably, and for decades, this has been an important basis for the management’s decision making. The sustainability strategy is based on the stable foundation of our declaration that “Sustainability is our way of life”. This commitment places sustainability at the heart of internal processes and reinforces internal and external communication on sustainability issues.'+"</p>"+
                                 "<h2 class='popup-h2'>"+'Focus'+"</h2>"+
@@ -183,6 +224,7 @@ farmBtn.addEventListener("click", () => {
     popUpFarm.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    linkIntroFarm.classList.add("popup-menu-underline");
 });
 
 closePopUpFarm.addEventListener("click", () => {
@@ -193,6 +235,9 @@ closePopUpFarm.addEventListener("click", () => {
 
 linkIntroFarm.addEventListener("click", () => {
     popupImgFarm.src = "/images/Farm_Intro_Background test.jpg";
+    linkIntroFarm.classList.add("popup-menu-underline");
+    schutz.classList.remove("popup-menu-underline");
+    morard.classList.remove("popup-menu-underline");
     popupInfoFarm.innerHTML = "<h1 class='popup-h1'>"+'Our growing Regions'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Robust and pure'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Our herbs grow at sites in Valais, Emmental, Val Poschiavo, the southern foothills of the Jura mountains and Central Switzerland. Over one hundred highly experienced herb farmers attend to the small plants that thrive in the soil types that are unique to the Swiss mountains. This is where the energy in every Ricola sweet comes from.'+"</p>"+
@@ -204,6 +249,9 @@ linkIntroFarm.addEventListener("click", () => {
 
 schutz.addEventListener("click", () => {
     popupImgFarm.src = "/images/Shutz_Background.png";
+    linkIntroFarm.classList.remove("popup-menu-underline");
+    schutz.classList.add("popup-menu-underline");
+    morard.classList.remove("popup-menu-underline");
     popupInfoFarm.innerHTML = "<h1 class='popup-h1'>"+'The Schütz family'+"</h1>"+
                             "<h2 class='popup-h2'>"+'“Ricola shares my values and mindset. Pursuing a policy of natural cultivation suits me perfectly.”<br><br>'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'The Schütz family’s partnership with Ricola has been in place for over twenty years. Based in Emmental, the six members of the family are dedicated to looking after their herb fields.'+"</p>"+
@@ -216,6 +264,9 @@ schutz.addEventListener("click", () => {
 
 morard.addEventListener("click", () => {
     popupImgFarm.src = "/images/Morard_Background test.png";
+    linkIntroFarm.classList.remove("popup-menu-underline");
+    schutz.classList.remove("popup-menu-underline");
+    morard.classList.add("popup-menu-underline");
     popupInfoFarm.innerHTML = "<h1 class='popup-h1'>"+'The Morard family'+"</h1>"+
                             "<h2 class='popup-h2'>"+'“Mountain people have always used herbs. These habits were passed down to me from my parents.”<br><br>'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Hailing from Grimisuat, the Morard family grows the mint used in Ricola Glacier Mints on the moraine soil that the canton of Valais is famous for.'+"</p>"+
@@ -232,6 +283,7 @@ herbsBtn.addEventListener("click", () => {
     popupHerbs.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    introHerbs.classList.add("popup-menu-underline");
 });
 
 closePopupHerbs.addEventListener("click", () => {
@@ -242,6 +294,9 @@ closePopupHerbs.addEventListener("click", () => {
 
 introHerbs.addEventListener("click", () => {
     popupImgHerbs.src = "/images/herb_intro.png";
+    introHerbs.classList.add("popup-menu-underline");
+    horehound.classList.remove("popup-menu-underline");
+    burnet.classList.remove("popup-menu-underline");
     popupInfoHerbs.innerHTML = "<h1 class='popup-h1'>"+'Intro'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Herbs'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'In 1940, Emil Richter, pioneer and founder of Ricola, mixed the 13 herb blend for the first time. Based on this blend, he established Ricola’s most important product, the original herb.<br><br>Today we use the same herbs to produce our fresh cough drops in different mixes and flavors.'+"</p>"+
@@ -304,6 +359,9 @@ introHerbs.addEventListener("click", () => {
 
 horehound.addEventListener("click", () => {
     popupImgHerbs.src = "/images/horehound.jpg";
+    introHerbs.classList.remove("popup-menu-underline");
+    horehound.classList.add("popup-menu-underline");
+    burnet.classList.remove("popup-menu-underline");
     popupInfoHerbs.innerHTML = "<h1 class='popup-h1'>"+'Horehound'+"</h1>"+
                             "<h2 class='popup-h2'>"+'ETYMOLOGY'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'The Latin name, marrubium vulgare, is derived from two Hebrew terms: mar, meaning “bitter”, and rob, meaning “much”. The taste of horehound also contributes to the name, with vulgare meaning “simple” or “common”.'+"</p>"+
@@ -324,6 +382,9 @@ horehound.addEventListener("click", () => {
 
 burnet.addEventListener("click", () => {
     popupImgHerbs.src = "/images/herb_burnet.png";
+    introHerbs.classList.remove("popup-menu-underline");
+    horehound.classList.remove("popup-menu-underline");
+    burnet.classList.add("popup-menu-underline");
     popupInfoHerbs.innerHTML = "<h1 class='popup-h1'>"+'Burnet'+"</h1>"+
                             "<h2 class='popup-h2'>"+'ETYMOLOGY'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'The Latin plant genus pimpinella saxifraga may come from the word bipinula, which roughly means “double p  innate” and describes the shape of the leaves. Saxifraga means “stone-breaker” and refers to the herb’s special power or cultivation site.'+"</p>"+
@@ -349,6 +410,7 @@ factory.addEventListener("click", () => {
     popUpFactory.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    linkIntroFactory.classList.add("popup-menu-underline");
 });
 
 exitFactory.addEventListener("click", () => {
@@ -359,6 +421,9 @@ exitFactory.addEventListener("click", () => {
 
 linkIntroFactory.addEventListener("click", () => {
     factoryImages.src = "/images/Factory_Background.jpg";
+    linkIntroFactory.classList.add("popup-menu-underline");
+    linkProcessing.classList.remove("popup-menu-underline");
+    linkProduction.classList.remove("popup-menu-underline");
     popUpTextFactory.innerHTML = "<h1 class='popup-h1'>"+'From alpine soil to cough drop'+"</h1>"+
                                 "<h2 class='popup-h2'>"+'“We should treat both our employees and our raw materials with care”'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Ricola has a long and rich history, they way we care for our ingredients and people are part of our culture. But that doesn’t mean that we aren’t continuously innovating in how to do what we do best, with a sustainable future in mind.'+"</p>"+
@@ -371,6 +436,9 @@ linkIntroFactory.addEventListener("click", () => {
 
 linkProcessing.addEventListener("click", () => {
     factoryImages.src = "/images/Processing_background.png";
+    linkIntroFactory.classList.remove("popup-menu-underline");
+    linkProcessing.classList.add("popup-menu-underline");
+    linkProduction.classList.remove("popup-menu-underline");
     popUpTextFactory.innerHTML = "<h1 class='popup-h1'>"+'Processing the fresh herbs'+"</h1>"+
                             "<h2 class='popup-h2'>"+'At Ricola, production is a matter of strictly controlled operations. This preserves the natural ingredients and aromas.<br><br>'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Taking the herbs from the field and turning them into the end product is a long process. Even so, some steps are extremely quick. For example, we use short transport routes to deliver the freshly harvested herbs to our herb center in Laufen. Over 1,400 tons of fresh herbs are processed at the center each year. After drying, they are cleaned, cut and stored. Mixing is the final step. These herbs are used to create the unique 10-herb mixture which serves as the basis for all Ricola products.'+"</p>"+
@@ -380,6 +448,9 @@ linkProcessing.addEventListener("click", () => {
 
 linkProduction.addEventListener("click", () => {
     factoryImages.src = "/images/Production_background.png";
+    linkIntroFactory.classList.remove("popup-menu-underline");
+    linkProcessing.classList.remove("popup-menu-underline");
+    linkProduction.classList.add("popup-menu-underline");
     popUpTextFactory.innerHTML = "<h1 class='popup-h1'>"+'From alpine soil to cough drop'+"</h1>"+
                             "<h2 class='popup-h2'>"+'“We should treat both our employees and our raw materials with care”'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Ricola has a long and rich history, they way we care for our ingredients and people are part of our culture. But that doesn’t mean that we aren’t continuously innovating in how to do what we do best, with a sustainable future in mind.'+"</p>"+
@@ -400,6 +471,7 @@ peopleBtn.addEventListener("click", () => {
     popUpPeople.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    linkPeople.classList.add("popup-menu-underline");
 });
 
 exitPeople.addEventListener("click", () => {
@@ -414,6 +486,7 @@ truckBtn.addEventListener("click", () => {
     popupAirplane.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
+    importMenu.classList.add("popup-menu-underline");
 });
 
 closePopupAirplane.addEventListener("click", () => {
@@ -424,6 +497,9 @@ closePopupAirplane.addEventListener("click", () => {
 
 exportMenu.addEventListener("click", () => {
     popupImgAirplane.src = "/images/export.png";
+    popupImgAirplane.src = "/images/export.png";
+    exportMenu.classList.add("popup-menu-underline");
+    importMenu.classList.remove("popup-menu-underline");
     popupInfoAirplane.innerHTML = "<h1 class='popup-h1'>"+'Export'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Providing Fresh Alpine Herbs'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Ricola is a global family company. We provide fresh alpine herbs in the form of cough drops on a worldwide scale. Our mission is to bring freshness and health of the swiss alps to anyone, anywhere.'+"</p>"+
@@ -433,6 +509,9 @@ exportMenu.addEventListener("click", () => {
 
 importMenu.addEventListener("click", () => {
     popupImgAirplane.src = "/images/Import.png";
+    popupImgAirplane.src = "/images/Import.png";
+    importMenu.classList.add("popup-menu-underline");
+    exportMenu.classList.remove("popup-menu-underline");
     popupInfoAirplane.innerHTML = "<h1 class='popup-h1'>"+'Imported herbs'+"</h1>"+
                             "<h2 class='popup-h2'>"+'Established Ecosystem'+"</h2>"+
                                 "<p class='popup-paragraph'>"+'Here at Ricola we pride ourselves on growing 97% of all our herbs right here in the swiss alps. With the help of over 100 amazing farmers we have established an ecosystem of fresh near produced raw materials.'+"</p>"+
