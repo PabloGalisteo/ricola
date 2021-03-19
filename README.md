@@ -33,13 +33,19 @@ We decided to create a webpage with the prototype that UX/UI designers had done 
 📕 Learnings:
 
 SCRUM-framework and Agile methodology
+
 Better understanding of JavaScript, CSS and Html
+
 Cross Teaming
 
 💻 Tech used in this project:
 
 Figma
+
 Miro
+
 Illustrator
+
 VsCode
+
 Github / Github pages
