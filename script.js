@@ -486,7 +486,6 @@ truckBtn.addEventListener("click", () => {
     popupAirplane.classList.add("bg-active");
     smallHeader.style.padding = "0.5em 3em";
     logoTransform.style.width = "4.5em";
-    importMenu.classList.add("popup-menu-underline");
 });
 
 closePopupAirplane.addEventListener("click", () => {

@@ -29,9 +29,57 @@ header {
   transition: 0.5s;
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .header-container   {
+    padding: 1.9em 3.7em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .header-container   {
+    padding: 2.1em 3.8em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .header-container   {
+    padding: 2.1em 3.8em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .header-container   {
+    padding: 2.4em 3.9em;
+  }
+}
+
 .logo {
   width: 6em;
   transition: 0.5s;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .logo  {
+    width: 6.6em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .logo  {
+    width: 6.7em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .logo  {
+    width: 6.7em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .logo  {
+    width: 6.7em;
+  }
 }
 
 .fa-bars {
@@ -66,6 +114,26 @@ bg-images {
   margin-left: 2.4em;
   padding-top: 2em;
   line-height: 1.22em;
+  margin-left: max(2.4em, 11.5%);
+  padding-top: max(2.4em, 0%);
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .titeltext  {
+    font-size: 6.3rem;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .titeltext  {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .titeltext  {
+    font-size: 9rem;
+  }
 }
 
 .main-button {
@@ -85,6 +153,26 @@ bg-images {
   font-weight: bolder;
   font-size: 0.875rem;
   z-index: 1;
+  margin-left: max(10.5em, 11.5%);
+  margin-top: max(1.6em, 1.4%);
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .main-button  {
+    font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .main-button  {
+    font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+  .main-button  {
+    font-size: 1.8rem;
+    }
 }
 
 .button-text {
@@ -118,6 +206,30 @@ button:focus {
   display: block;
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .section1  {
+    margin-top: 2.8em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .section1   {
+    margin-top: 10em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .section1   {
+    margin-top: 6em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .section1  {
+    margin-top: 3em;
+  }
+}
+
 .caramel-btn {
   position: absolute;
   margin-top: -111.4%;
@@ -143,7 +255,38 @@ button:focus {
   background-position-x: 49%;
   background-size: 20em;
   background-repeat: no-repeat;
+}
 
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .caramel:hover   {
+    background-position-y: 36%;
+    background-position-x: 50%;
+    background-size: 23em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .caramel:hover   {
+    background-position-y: 36%;
+    background-position-x: 50%;
+    background-size: 30em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .caramel:hover   {
+    background-position-y: 33%;
+    background-position-x: 50%;
+    background-size: 40em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .caramel:hover   {
+    background-position-y: 36%;
+    background-position-x: 50%;
+    background-size: 53em;
+  }
 }
 
 .airplane-btn {
@@ -231,6 +374,34 @@ button:focus {
   line-height: 1.37em;
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .text-mountain  {
+    font-size: 2.6rem;
+    margin-left: 27%;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .text-mountain  {
+    font-size: 3.2rem;
+    margin-left: 28.5%;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .text-mountain  {
+    font-size: 3.5rem;
+    margin-left: 28%;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .text-mountain  {
+    font-size: 5rem;
+    margin-left: 29%;
+  }
+}
+
 .popup-bg {
   position: fixed;
   width: 100%;
@@ -247,6 +418,24 @@ button:focus {
   opacity: 0;
   transition: visibility 0s opacity 0.5s;
   transition: 0.5s;
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-bg  {
+    top: 2%;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-bg  {
+    top: 2%;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-bg  {
+    top: 1.5%;
+  }
 }
 
 .bg-active {
@@ -273,7 +462,7 @@ button:focus {
   color: var(--white);
   width: 44%;
   height: 75vh;
-  margin-right: -35.1em;
+  margin-right: -44vw;
   padding: 3em 2em 3em 3.5em;
   background-color: rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(10px);
@@ -282,9 +471,45 @@ button:focus {
   flex-direction: column;
 }
 
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-info  {
+    padding: 3.5em 2.5em 3.5em 4em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-info  {
+    padding: 4em 3em 4em 4.5em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-info  {
+    padding: 5em 4em 5em 5.5em;
+  }
+}
+
 .popup-menu {
   font-family: var(--font-titel);
   font-size: 1.55rem;
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-menu  {
+    font-size: 1.95rem;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-menu  {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-menu  {
+    font-size: 2.8rem;
+  }
 }
 
 .popup-menu-list {
@@ -293,9 +518,24 @@ button:focus {
   display: block;
   margin-bottom: 1em;
   padding: 0em 0.7em 0.1em 0em;
-  /* text-decoration-line: underline;
-  text-decoration-thickness: 0.15em;
-  text-underline-offset: 0.2em; */
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-menu-list  {
+    padding: 0em 0.9em 0.3em 0em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-menu-list  {
+    padding: 0em 1.05em 0.4em 0em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-menu-list  {
+    padding: 0em 1.2em 0.55em 0em;
+  }
 }
 
 .popup-menu-list:hover {
@@ -322,10 +562,46 @@ button:focus {
   font-size: 1.3rem;
 }
 
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-h1  {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-h1  {
+    font-size: 2.15rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-h1  {
+    font-size: 2.55rem;
+  }
+}
+
 .popup-h2 {
   font-size: 1.08rem;
   font-family: var(--font-titel);
   margin-bottom: 0.2em;
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-h2  {
+    font-size: 1.48rem;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-h2  {
+    font-size: 1.93rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-h2  {
+    font-size: 2.33rem;
+  }
 }
 
 .popup-paragraph {
@@ -336,14 +612,75 @@ button:focus {
   font-size: 0.93rem;
 }
 
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .popup-paragraph  {
+    font-size: 1.33rem;
+    margin-bottom: 1.2em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .popup-paragraph  {
+    font-size: 1.58rem;
+    margin-bottom: 1.4em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .popup-paragraph  {
+    font-size: 2.18rem;
+    margin-bottom: 1.5em;
+  }
+}
+
 .inner-images {
   margin-bottom: 2em;
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .inner-images  {
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .inner-images  {
+    margin-bottom: 3em;
+  }
 }
 
 .exit-btn {
   left: 4.55em;
   top: 5em;
   position: absolute;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .exit-btn  {
+    left: 5.3em;
+    top: 5.3em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .exit-btn  {
+    left: 7.3em;
+    top: 7.3em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .exit-btn  {
+    left: 8.3em;
+    top: 8.3em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .exit-btn  {
+    left: 10.95em;
+    top: 10.2em;
+  }
 }
 
 .icon-audience {
@@ -358,10 +695,34 @@ button:focus {
   width: 100%;
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .section2  {
+    margin-top: -32em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .section2  {
+    margin-top: -45em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .section2  {
+    margin-top: -55em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .section2   {
+    margin-top: -72em;
+  }
+}
+
 .farm-btn {
   position: absolute;
   margin-top: -91%;
-  margin-left: 56%;
+  margin-left: 54%;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -369,6 +730,8 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
+  width: 28.5%;
+
 }
 
 .farm-img {
@@ -420,6 +783,7 @@ button:focus {
   justify-content: center;
   margin-bottom: 1.4em;
   margin-top: 1.4em;
+  margin-bottom: max(1.4em, 4%);
 }
 
 .bubble-woman,
@@ -428,10 +792,31 @@ button:focus {
   margin: 0em 1em;
 }
 
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .bubble-woman,
+  .bubble-man  {
+    margin: 0em 2.6em;
+  }
+} 
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .bubble-woman,
+  .bubble-man  {
+    margin: 0em 2.8em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .bubble-woman,
+  .bubble-man  {
+    margin: 0em 2.9em;
+  }
+}
+
 .herbs-btn {
   position: absolute;
-  margin-top: -70%;
-  margin-left: 35%;
+  margin-top: -70.4%;
+  margin-left: 33%;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -440,6 +825,7 @@ button:focus {
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
   z-index: 0;
+  width: 67%;
 }
 
 .herbs-img {
@@ -456,7 +842,7 @@ button:focus {
 
 .herbs-images {
   display: flex;
-  flex-wrap: wrap; /* NEW */
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   vertical-align: top;
@@ -468,15 +854,84 @@ button:focus {
   margin-bottom: 0.2em;
 }
 
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .inner-images-herbs  {
+    margin-bottom: 0.55em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .inner-images-herbs  {
+    margin-bottom: 0.8em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .inner-images-herbs  {
+    margin-bottom: 1.1em;
+  }
+}
+
 .div-herbs {
   width: 5.2em;
   padding: 0.9em;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .div-herbs  {
+    width:  6em;
+    margin: 1.6em 1.5em 1.5em 1.5em;
+    padding: 0em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .div-herbs  {
+    width:  6em;
+    margin: 1.5em 1.7em 1.7em 1.7em;
+    padding: 0em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .div-herbs  {
+    width:  8.5em;
+    margin: 1.2em 2em 2em 2em;
+    padding: 0em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .div-herbs  {
+    width:  11em;
+    margin: 0.5em 2.5em 2.5em 2.5em;
+    padding: 0em;
+
+  }
 }
 
 .p-herbs {
   text-align: center;
   font-family: var(--font-titel);
   font-size: 0.85rem;
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .p-herbs  {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .p-herbs  {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .p-herbs  {
+    font-size: 1.9rem;
+  }
 }
 
 /*------------------------------------SECTION 3---------------------------------------*/
@@ -486,9 +941,57 @@ button:focus {
   position: relative;
 }
 
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .section3  {
+    margin-top: -60em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .section3   {
+    margin-top: -77em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .section3   {
+    margin-top: -96em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .section3   {
+    margin-top: -128em;
+  }
+}
+
 .section4 {
   margin-top: -49em;
   position: relative;
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1999px) {
+  .section4  {
+    margin-top: -63em;
+  }
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .section4   {
+    margin-top: -80em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .section4   {
+    margin-top: -100em;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .section4   {
+    margin-top: -130em;
+  }
 }
 
 .fa-times {
@@ -581,6 +1084,7 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
+  width: 30%;
 }
 
 .factory-img {
@@ -599,7 +1103,8 @@ button:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
+  margin-bottom: max(1.5em, 3%);
 }
 
 .img-production-flex {
@@ -611,7 +1116,9 @@ button:focus {
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
+  margin-bottom: max(2em, 4%);
 }
+
 
 .truck-btn {
   position: absolute;
@@ -624,6 +1131,7 @@ button:focus {
   animation-direction: normal;
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
+  width: 95%;
 }
 
 .truck-img {

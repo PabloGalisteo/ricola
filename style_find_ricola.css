@@ -44,7 +44,7 @@ header {
 
 .bg-yellow {
   background-color: var(--yellow);
-  height: 47em;
+  height: 70%;
 }
 
 .flex-yellow {
@@ -61,22 +61,60 @@ header {
   width: 593px;
   height: 157px;
   left: 134px;
-  top: 134px;
+  top: 155px;
   text-align: left;
   font-family: var(--font-titel);
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
+  font-size: 5rem;
   line-height: 79px;
   color: var(--green);
+}
+
+@media screen and (min-width:2000px) {
+  .main-text  {
+    font-size: 6rem;
+    width: 700px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (min-width:3000px) {
+  .main-text {
+    font-size: 9rem;
+    width: 1500px;
+    line-height: 150px;
+    left: 300px;
+  }
 }
 
 .arrow-down {
   position: absolute;
   width: 114px;
   height: 114px;
-  left: 280px;
-  top: 620px;
+  left: 20%;
+  top: 80%;
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .arrow-down  {
+    left: 40%;
+    top: 65%;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .arrow-down  {
+    left: 40%;
+    top: 40%;
+  }
+}
+
+@media screen and (min-width:3000px) {
+  .arrow-down  {
+    left: 48%;
+    top: 42%;
+  }
 }
 
 /* Second block */
@@ -182,6 +220,24 @@ header {
   margin-left: 27em;
 }
 
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .view-products {
+    margin-left: 49em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .view-products {
+    margin-left: 62em;
+  }
+}
+
+@media screen and (min-width:3000px) {
+  .view-products {
+    margin-left: 75em;
+  }
+}
+
 /********************************* final product page *********************************/
 
 .div-tailored {
@@ -197,16 +253,57 @@ header {
 .ricola-products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 12%;
-  grid-column-gap: 12%;
+  grid-row-gap: 12em;
+  grid-column-gap: 12em;
   justify-content: center;
-  padding: 13em;
-  margin-top: -6.5em;
+  margin: 40em;
+  margin-top: 4em;
+  align-items: center;
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .ricola-products   {
+    padding: 18em;
+    margin-top: -11.5em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .ricola-products   {
+    padding: 30em;
+    margin-top: -18.5em;
+  }
+}
+
+@media screen and (min-width:3000px) {
+  .ricola-products   {
+    padding: 40em;
+    margin-top: -31em;
+
+  }
 }
 
 .bg-green2 {
   height: 74em;
   background-color: var(--green);
+}
+
+@media screen and (min-width:2000px) and (max-width: 2500px) {
+  .bg-green2  {
+    height: 85em;
+  }
+}
+
+@media screen and (min-width:2501px) and (max-width: 2999px) {
+  .bg-green2   {
+    height: 92em;
+  }
+}
+
+@media screen and (min-width:3000px) {
+  .bg-green2  {
+    height: 90em;
+  }
 }
 
 /************************** Footer ******************************/
