@@ -1,6 +1,7 @@
 Brief 8 - Hyper Island - Code and Collaborate module
 
 👥 Team:
+
 <a href="https://github.com/Mieown">Malin Olofsson (FED)</a>
 
 <a href="https://github.com/PabloGalisteo">Pablo Galisteo (FED)</a>
