@@ -45,12 +45,6 @@ const burnet = document.querySelector(".link-Burnet")
 const popupImgHerbs = document.querySelector(".popup-img-herbs")
 const popupInfoHerbs = document.querySelector(".popup-text-herbs")
 
-// const schutzId = document.getElementById("link-schutz")
-// const morard = document.querySelector(".link-morard")
-// const linkIntroFarm = document.querySelector(".link-intro-farm")
-// const popupInfoFarm = document.querySelector(".popup-text-farm")
-// const popupImgFarm = document.querySelector(".popup-img-farm")
-
 //section 4 People
 const peopleBtn = document.querySelector(".people-btn")
 const popUpPeople = document.querySelector(".popup-people")
@@ -70,14 +64,14 @@ const linkProcessing = document.querySelector(".link-processing")
 const linkProduction = document.querySelector(".link-production")
 
 const truckBtn = document.querySelector(".truck-btn")
-const ricolaSound = new Audio("/images/ricola_short.mp3");
+const ricolaSound = new Audio("./images/ricola_short.mp3");
 
 // ------------------------------------SECTION 1------------------------------------
 
 //Caramel button
 
 ricolaSound.addEventListener("ended", function(){
-    location.href = "https://www.ricola.com/en-gb/products/all-products";
+    location.href = "./https://www.ricola.com/en-gb/products/all-products";
 });
 
 caramelBtn.addEventListener("click", function() {
