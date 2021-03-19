@@ -30,25 +30,25 @@ header {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .header-container   {
+  .header-container {
     padding: 1.9em 3.7em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .header-container   {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .header-container {
     padding: 2.1em 3.8em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .header-container   {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .header-container {
     padding: 2.1em 3.8em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .header-container   {
+  .header-container {
     padding: 2.4em 3.9em;
   }
 }
@@ -59,25 +59,25 @@ header {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .logo  {
+  .logo {
     width: 6.6em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .logo  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .logo {
     width: 6.7em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .logo  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .logo {
     width: 6.7em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .logo  {
+  .logo {
     width: 6.7em;
   }
 }
@@ -118,20 +118,20 @@ bg-images {
   padding-top: max(2.4em, 0%);
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .titeltext  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .titeltext {
     font-size: 6.3rem;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .titeltext  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .titeltext {
     font-size: 8rem;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .titeltext  {
+  .titeltext {
     font-size: 9rem;
   }
 }
@@ -157,22 +157,22 @@ bg-images {
   margin-top: max(1.6em, 1.4%);
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .main-button  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .main-button {
     font-size: 1.4rem;
-    }
+  }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .main-button  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .main-button {
     font-size: 1.7rem;
-    }
+  }
 }
 
 @media screen and (min-width: 3000px) {
-  .main-button  {
+  .main-button {
     font-size: 1.8rem;
-    }
+  }
 }
 
 .button-text {
@@ -207,25 +207,25 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .section1  {
+  .section1 {
     margin-top: 2.8em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .section1   {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .section1 {
     margin-top: 10em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .section1   {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .section1 {
     margin-top: 6em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .section1  {
+  .section1 {
     margin-top: 3em;
   }
 }
@@ -243,14 +243,14 @@ button:focus {
 
 .caramel {
   width: 112%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-  .caramel:hover {
+.caramel:hover {
   -ms-transform: scale(1.3);
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
-  background:url('/images/ricola\ wheel.svg');
+  background: url('./images/ricola\ wheel.svg');
   background-position-y: 32%;
   background-position-x: 49%;
   background-size: 20em;
@@ -258,23 +258,23 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .caramel:hover   {
+  .caramel:hover {
     background-position-y: 36%;
     background-position-x: 50%;
     background-size: 23em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .caramel:hover   {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .caramel:hover {
     background-position-y: 36%;
     background-position-x: 50%;
     background-size: 30em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .caramel:hover   {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .caramel:hover {
     background-position-y: 33%;
     background-position-x: 50%;
     background-size: 40em;
@@ -282,7 +282,7 @@ button:focus {
 }
 
 @media screen and (min-width: 3000px) {
-  .caramel:hover   {
+  .caramel:hover {
     background-position-y: 36%;
     background-position-x: 50%;
     background-size: 53em;
@@ -305,13 +305,13 @@ button:focus {
 
 .airplane {
   width: 100%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.airplane:hover{
+.airplane:hover {
   -ms-transform: scale(1.16); /* IE 9 */
   -webkit-transform: scale(1.16); /* Safari 3-8 */
-  transform: scale(1.16); 
+  transform: scale(1.16);
 }
 
 .climber-btn {
@@ -330,13 +330,13 @@ button:focus {
 
 .climber-hover {
   width: 100%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.climber-hover:hover{
+.climber-hover:hover {
   -ms-transform: scale(1.17); /* IE 9 */
   -webkit-transform: scale(1.17); /* Safari 3-8 */
-  transform: scale(1.17); 
+  transform: scale(1.17);
 }
 
 @-webkit-keyframes pulse {
@@ -375,28 +375,28 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .text-mountain  {
+  .text-mountain {
     font-size: 2.6rem;
     margin-left: 27%;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .text-mountain  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .text-mountain {
     font-size: 3.2rem;
     margin-left: 28.5%;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .text-mountain  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .text-mountain {
     font-size: 3.5rem;
     margin-left: 28%;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .text-mountain  {
+  .text-mountain {
     font-size: 5rem;
     margin-left: 29%;
   }
@@ -420,20 +420,20 @@ button:focus {
   transition: 0.5s;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-bg  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-bg {
     top: 2%;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-bg  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-bg {
     top: 1.5%;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-bg  {
+  .popup-bg {
     top: 1.5%;
   }
 }
@@ -471,20 +471,20 @@ button:focus {
   flex-direction: column;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-info  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-info {
     padding: 3.5em 2.5em 3.5em 4em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-info  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-info {
     padding: 4em 3em 4em 4.5em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-info  {
+  .popup-info {
     padding: 5em 4em 5em 5.5em;
   }
 }
@@ -494,20 +494,20 @@ button:focus {
   font-size: 1.55rem;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-menu  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-menu {
     font-size: 1.95rem;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-menu  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-menu {
     font-size: 2.4rem;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-menu  {
+  .popup-menu {
     font-size: 2.8rem;
   }
 }
@@ -520,20 +520,20 @@ button:focus {
   padding: 0em 0.7em 0.1em 0em;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-menu-list  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-menu-list {
     padding: 0em 0.9em 0.3em 0em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-menu-list  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-menu-list {
     padding: 0em 1.05em 0.4em 0em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-menu-list  {
+  .popup-menu-list {
     padding: 0em 1.2em 0.55em 0em;
   }
 }
@@ -562,20 +562,20 @@ button:focus {
   font-size: 1.3rem;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-h1  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-h1 {
     font-size: 1.7rem;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-h1  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-h1 {
     font-size: 2.15rem;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-h1  {
+  .popup-h1 {
     font-size: 2.55rem;
   }
 }
@@ -586,20 +586,20 @@ button:focus {
   margin-bottom: 0.2em;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-h2  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-h2 {
     font-size: 1.48rem;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-h2  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-h2 {
     font-size: 1.93rem;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-h2  {
+  .popup-h2 {
     font-size: 2.33rem;
   }
 }
@@ -612,22 +612,22 @@ button:focus {
   font-size: 0.93rem;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .popup-paragraph  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .popup-paragraph {
     font-size: 1.33rem;
     margin-bottom: 1.2em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .popup-paragraph  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .popup-paragraph {
     font-size: 1.58rem;
     margin-bottom: 1.4em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .popup-paragraph  {
+  .popup-paragraph {
     font-size: 2.18rem;
     margin-bottom: 1.5em;
   }
@@ -637,14 +637,14 @@ button:focus {
   margin-bottom: 2em;
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .inner-images  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .inner-images {
     margin-bottom: 3em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .inner-images  {
+  .inner-images {
     margin-bottom: 3em;
   }
 }
@@ -656,28 +656,28 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .exit-btn  {
+  .exit-btn {
     left: 5.3em;
     top: 5.3em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .exit-btn  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .exit-btn {
     left: 7.3em;
     top: 7.3em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .exit-btn  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .exit-btn {
     left: 8.3em;
     top: 9.9em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .exit-btn  {
+  .exit-btn {
     left: 10.95em;
     top: 10.2em;
   }
@@ -696,25 +696,25 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .section2  {
+  .section2 {
     margin-top: -32em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .section2  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .section2 {
     margin-top: -45em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .section2  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .section2 {
     margin-top: -55em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .section2   {
+  .section2 {
     margin-top: -72em;
   }
 }
@@ -731,18 +731,17 @@ button:focus {
   -webkit-animation-name: pulsefarm;
   animation-name: pulsefarm;
   width: 28.5%;
-
 }
 
 .farm-img {
   width: 100%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.farm-img:hover{
+.farm-img:hover {
   -ms-transform: scale(1.14); /* IE 9 */
   -webkit-transform: scale(1.14); /* Safari 3-8 */
-  transform: scale(1.14); 
+  transform: scale(1.14);
 }
 
 @-webkit-keyframes pulsefarm {
@@ -792,23 +791,23 @@ button:focus {
   margin: 0em 1em;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
   .bubble-woman,
-  .bubble-man  {
+  .bubble-man {
     margin: 0em 2.6em;
   }
-} 
+}
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
   .bubble-woman,
-  .bubble-man  {
+  .bubble-man {
     margin: 0em 2.8em;
   }
 }
 
 @media screen and (min-width: 3000px) {
   .bubble-woman,
-  .bubble-man  {
+  .bubble-man {
     margin: 0em 2.9em;
   }
 }
@@ -830,15 +829,14 @@ button:focus {
 
 .herbs-img {
   width: 80%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.herbs-img:hover{
+.herbs-img:hover {
   -ms-transform: scale(1.14); /* IE 9 */
   -webkit-transform: scale(1.14); /* Safari 3-8 */
-  transform: scale(1.14); 
+  transform: scale(1.14);
 }
-
 
 .herbs-images {
   display: flex;
@@ -854,20 +852,20 @@ button:focus {
   margin-bottom: 0.2em;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .inner-images-herbs  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .inner-images-herbs {
     margin-bottom: 0.55em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .inner-images-herbs  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .inner-images-herbs {
     margin-bottom: 0.8em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .inner-images-herbs  {
+  .inner-images-herbs {
     margin-bottom: 1.1em;
   }
 }
@@ -878,35 +876,34 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .div-herbs  {
-    width:  6em;
+  .div-herbs {
+    width: 6em;
     margin: 1.6em 1.5em 1.5em 1.5em;
     padding: 0em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .div-herbs  {
-    width:  6em;
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .div-herbs {
+    width: 6em;
     margin: 1.5em 1.7em 1.7em 1.7em;
     padding: 0em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .div-herbs  {
-    width:  8.5em;
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .div-herbs {
+    width: 8.5em;
     margin: 1.2em 2em 2em 2em;
     padding: 0em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .div-herbs  {
-    width:  11em;
+  .div-herbs {
+    width: 11em;
     margin: 0.5em 2.5em 2.5em 2.5em;
     padding: 0em;
-
   }
 }
 
@@ -916,20 +913,20 @@ button:focus {
   font-size: 0.85rem;
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .p-herbs  {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .p-herbs {
     font-size: 1.3rem;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .p-herbs  {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .p-herbs {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .p-herbs  {
+  .p-herbs {
     font-size: 1.9rem;
   }
 }
@@ -942,25 +939,25 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .section3  {
+  .section3 {
     margin-top: -60em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .section3   {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .section3 {
     margin-top: -77em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .section3   {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .section3 {
     margin-top: -96em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .section3   {
+  .section3 {
     margin-top: -128em;
   }
 }
@@ -971,25 +968,25 @@ button:focus {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1999px) {
-  .section4  {
+  .section4 {
     margin-top: -63em;
   }
 }
 
-@media screen and (min-width:2000px) and (max-width: 2500px) {
-  .section4   {
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  .section4 {
     margin-top: -80em;
   }
 }
 
-@media screen and (min-width:2501px) and (max-width: 2999px) {
-  .section4   {
+@media screen and (min-width: 2501px) and (max-width: 2999px) {
+  .section4 {
     margin-top: -100em;
   }
 }
 
 @media screen and (min-width: 3000px) {
-  .section4   {
+  .section4 {
     margin-top: -130em;
   }
 }
@@ -1017,13 +1014,13 @@ button:focus {
 
 .people-img {
   width: 80%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.people-img:hover{
+.people-img:hover {
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari 3-8 */
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 .popup-img-people {
@@ -1089,13 +1086,13 @@ button:focus {
 
 .factory-img {
   width: 100%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.factory-img:hover{
+.factory-img:hover {
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari 3-8 */
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 .img-factory-friend {
@@ -1119,7 +1116,6 @@ button:focus {
   margin-bottom: max(2em, 4%);
 }
 
-
 .truck-btn {
   position: absolute;
   margin-top: -51%;
@@ -1136,13 +1132,13 @@ button:focus {
 
 .truck-img {
   width: 24%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.truck-img:hover{
+.truck-img:hover {
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari 3-8 */
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 @-webkit-keyframes pulsefarm {
