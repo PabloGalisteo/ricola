@@ -428,7 +428,7 @@ button:focus {
 
 @media screen and (min-width:2501px) and (max-width: 2999px) {
   .popup-bg  {
-    top: 2%;
+    top: 1.5%;
   }
 }
 
@@ -672,7 +672,7 @@ button:focus {
 @media screen and (min-width:2501px) and (max-width: 2999px) {
   .exit-btn  {
     left: 8.3em;
-    top: 8.3em;
+    top: 9.9em;
   }
 }
 
