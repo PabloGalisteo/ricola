@@ -28,7 +28,7 @@ Improve our knowledge about CSS, HTML and JavaScript. Learn about Agile methodol
 
 ✔️ Solution:
 
-We decided to create a webpage with the prototype that UX/UI designers had done in vanilla JavaScript, CSS and HTML withouth frameworks in order to assimilate those knowledges. The images are created mainly with Figma by the UX/UI. We wanted to make the website easy to navigate, intuitive and clickable to the different elements in an inclusive way instead of "obligate" the user to go through all the different steps. You click were you want to click and it will go through the different ideas that Ricola want to transmit.
+We decided to create a webpage with the prototype that UX/UI designers had done in vanilla JavaScript, CSS and HTML withouth frameworks in order to assimilate those knowledges. The images are created mainly with Figma by the UX/UI. We wanted to make the website easy to navigate, intuitive and clickable to the different elements in an inclusive way instead of "obligate" the user to go through all the different steps. You click were you want to click and it will go through the different ideas that Ricola want to transmit. (The website doesn't work on mobile devices)
 
 📕 Learnings:
 
